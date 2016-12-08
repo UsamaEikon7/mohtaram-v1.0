@@ -52,10 +52,10 @@ html {
     text-align: center;
     color: #fff;
     background:url(../img/slider-img.jpg) no-repeat bottom center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    background-size: cover !important;
+    -o-background-size: cover !important;
 }
 
 .intro-body {

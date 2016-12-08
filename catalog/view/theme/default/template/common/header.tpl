@@ -1,3 +1,7 @@
+<?php
+//echo "<pre>"; print_r($categories); exit;
+ ?>
+
 <!DOCTYPE html>
 
 <!--[if (gt IE 9)|!(IE)]><!-->

@@ -35,7 +35,7 @@ h6{ font-size:18px; color:#FFF; }
 .navbar{ margin-bottom:0px; background:#2b2b2c; border:0px; margin:20px 0 0 0; min-height:inherit !important; height:40px;}
 .navbar-nav{ width:100%;}
 .navbar-default{ border-radius:0px; padding:0px 0px; width:100%;}
-.navbar-default li{ float:none; display:inline-block;}
+.navbar-default li{ float:none; display:inline-block; }
 .navbar-default li a{ font-size:18px; color:#FFF !important; position:relative; letter-spacing:1px; font-family: 'majesti_bannerbold'; padding:0px 20px; line-height:40px;}
 .navbar-default li a:hover{ color:#dec57f !important; }
 .navbar-default li a.active{ color:#dec57f !important;}
@@ -48,7 +48,7 @@ h6{ font-size:18px; color:#FFF; }
 
 /*--------------- Slider Styles ---------------*/
 
-.slider-caption{ position:relative; margin:0px auto; width:742px; background:url(../img/slide-border.png) top center no-repeat; padding:60px 0; text-align:center;}
+.slider-caption{ position:relative; margin:0px auto; width:100%; background:url(../img/slide-border.png) top center no-repeat; padding:60px 0; text-align:center;}
 /*.slider-caption:before{ background:url(../img/caption-before.png) no-repeat; width:369px; height:92px; content:''; position:absolute; left:50%; top:-100px; margin-left:-185px;}
 
 .slider-caption p:after{ background:url(../img/caption-after.png) no-repeat; width:369px; height:92px; content:''; position:absolute; left:50%; bottom:-100px; margin-left:-185px;}
@@ -340,7 +340,7 @@ figure:hover+span {
 .small-image{ position:relative; margin:30px 0 0 35px;}
 .small-image:before{position:absolute; background:url(../img/small-img-border.png) no-repeat; width:190px; height:190px; content:''; left:-10px; bottom:-10px;}
 
-.about-body{ padding:60px 40px 20px 40px; background:#FFF; position:relative; float:right; width:50%; min-height:801px;}
+.about-body{ padding:6% 4% 2% 4%; background:#FFF; position:relative; float:right; width:50%; min-height:801px;}
 .about-body:before{ width:21px; height:42px; background:url(../img/before-arrow.png) no-repeat; position:absolute; left:-21px; top:50%; content:'';}
 .about-body p{ font-size:17px; color:#2b2b2b; line-height:36px;}
 .about-body h2{ margin:70px 0 40px 0;}
@@ -358,7 +358,7 @@ figure:hover+span {
 .frame-life-bg a.readmore-btn:hover{ color:#2b2b2b !important; border:#dec57f solid 1px;}
 
 .letter-box{ border:#FFF dashed 2px; padding:20px;}
-.letter-box .body-area{ background:#FFF; padding:100px 180px 70px 180px;}
+.letter-box .body-area{ background:#FFF; padding: 10% 18% 7% 18%;}
 .letter-box .body-area h4:after{ left:50%; margin-left:-20px;}
 .letter-box .body-area p{ font-size:17px; line-height:36px;}
 
@@ -704,6 +704,7 @@ input.marginnone, a.marginnone {
 .big-image img{ width:100%;}
 .big-image:after{ right:-10px; top:-10px;}
 .copyrights ul{ text-align:center;}
+.slider-caption.slider-caption-center h2 { font-size:24px;}
 }
 
 @media (min-width:1024px) {
@@ -815,6 +816,56 @@ a.readmore-btn{ width:100%; text-align:center;}
 
 }
 
+@media (max-width:425px) {
+	.topheader{ padding-top:10px;}
+	.logo{ padding:0px;}
+	.logo img{ width:100%;}
+	input.field{ width:100%; margin-bottom:10px;}
+	.navbar{ margin-top:10px;}
+	.navbar-nav{ margin:0px !important; background-color: rgb(43, 43, 44);}
+	.navbar-default li{ width:100%;}
+	
+	.header-slide{ padding:200px 20px 0 20px;}
+
+.slider-caption h2{ font-size:52px; margin:20px 0px;}
+.slider-caption a.collection-btn{ margin:110px 0 0 0;}
+.overlay{ padding: 20% 5% 0 5% !important;}
+.about-bg{ width:100%;}
+.about-body{ padding: 60px 20px 20px 30px; width: 100%;}
+a.readmore-btn{ width:100%; text-align:center;}
+.collection-bg{ width:100%;}
+.collection-body, .product-week-bg, .frame-life-bg{ width:100%;}
+.letter-box .body-area {
+    background: #FFF;
+    padding: 50px 30px 30px 30px;
+}
+.letter-box {
+	margin:10px;
+    padding: 10px;
+}
+
+
+.our-story p{ padding:20px 0;}
+.our-story a.collection-btn{ width:100%;}
+.border-right {
+    border-bottom: #d4d1cf solid 1px;
+	border-right: 0px;
+}
+.copyrights ul li {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.sticky.topheader{ padding:10px 0 0 0 !important;}
+.sticky .logo img{ width:100%;}
+.sticky .navbar{ margin:10px 0 0 0;}
+.navbar-default li {
+    width: 100%;
+}
+}
+
+
 
 /* 
 Category hover images
@@ -823,7 +874,7 @@ Category hover images
 
 .archive .archive-article {
 	float: left;
-	height: 380px;
+	height: 504px;
 	overflow: hidden;
 	position: relative;
 	width: 100%;
@@ -831,7 +882,7 @@ Category hover images
 
 .people_wrap .archive .archive-article {
     float: left;
-    height: 380px;
+    height: 504px;
     overflow: hidden;
     position: relative;
 }
@@ -861,7 +912,7 @@ Category hover images
     display: none;
 }
 .archive .archive-article .overlay {
-    background: rgba(222, 197, 127, 0.9)scroll left top;
+    background: rgba(0, 0, 0, 0.7)scroll left top;
     opacity: 0;
     position: relative;
     transition: opacity 0.2s ease 0s;
@@ -879,9 +930,24 @@ Category hover images
 	transform: translateY(-50%);
 	width: 100%;
 }
+.archive .archive-article .overlay .overlay-content p.price {
+	color:#fff;
+}
+.archive .archive-article .overlay .overlay-content button {
+	background: #dec57f;
+padding: 12px 25px;
+font-size: 14px;
+color: #2b2b2b ;
+text-transform: uppercase;
+font-family: 'majesti_bannerbold' !important;
+margin: 0px 0 0 0;
+border: 0px !important;
+border-radius:10px;
+
+}
 
 .archive .archive-article h2 {
-    font-family: 'mullerbold';font-size: 48px;color: #fff;
+    font-family: 'mullerbold' !important;font-size: 38px;color: #fff; font-weight:normal; 
 }
 
 .leftrightmargin {
@@ -978,3 +1044,4 @@ Faisal CSS for My Accounts Option
 .account-options a:hover { background: #2b2b2c; color: #fff; cursor:pointer;}
 
 .account-options a span { text-align: right; float: right; }
+.navbar-toggle {border:0px; margin-bottom:0px;}

@@ -519,7 +519,7 @@ class ModelCatalogProduct extends Model {
                         return $array;
                     }    
                 }       
-                            
+                //print_r($data['attributes_filters']); exit;            
                 if (!empty($data['attributes_filters']) && count($data['attributes_filters']) > 0 ) { 
                     $data['attributes_filters'] = array_clean($data['attributes_filters']);   
                    
@@ -626,7 +626,7 @@ class ModelCatalogProduct extends Model {
 		if (!empty($data['filter_manufacturer_id'])) {
 			$sql .= " AND p.manufacturer_id = '" . (int)$data['filter_manufacturer_id'] . "'";
 		}
-
+		//echo $sql; exit;
 		$query = $this->db->query($sql);
 
 		return $query->row['total'];

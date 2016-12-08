@@ -39,6 +39,7 @@
             
       
             <?php if (isset($attribute_group['attributes']) && count($attribute_group['attributes']) > 0) {
+										//echo "<pre>"; print_r($attribute_group['attributes']); exit;
                                         foreach ($attribute_group['attributes'] as $id_attribute => $attribute) {
                                             //$name = $attribute['text'] . (($display_product_count) ? ' (' . $attribute['total'] . ')' : '');
                                             $name = $attribute_group['name'] . (($display_product_count) ? ' (' . $attribute['total'] . ')' : '');
