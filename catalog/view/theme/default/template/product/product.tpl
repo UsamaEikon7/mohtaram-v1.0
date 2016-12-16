@@ -1,4 +1,12 @@
-<?php echo $header; ?>
+<?php
+// Get current product link for social sharing
+$current_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+
+
+ ?>
+
+<?php
+ echo $header; ?>
     <section class="archive product_detail_p" >
     
         <div class="col-md-8 col-sm-8 padding0">
@@ -27,12 +35,14 @@
                     <div class="social pull-right addthis_toolbox addthis_default_style addthis_32x32_style" data-url="<?php echo $share; ?>">
                     	
                         
-                        
-                         <a class="addthis_button_tweet"><i class="fa fa-twitter"></i></a> 
-                         <a class="addthis_button_pinterest_pinit"><i class="fa fa-pinterest"></i></a>
-                          <a class="addthis_counter addthis_pill_style"></a>
-                          
-            			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $current_link; ?>"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/home?status=<?php echo $current_link; ?>"><i class="fa fa-twitter"></i></a> 
+                         <!--<a href=""><i class="fa fa-pinterest"></i></a>-->
+                         <a href="https://plus.google.com/share?url=<?php echo $current_link; ?>"><i class="fa fa-google-plus"></i></a>
+                         <!--<a href=""><i class="fa fa-instagram"></i></a>
+                         <a href=""><i class="fa fa-pinterest"></i></a>
+                          -->
+            			<!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>-->
                     
                     </div><!--social-->
                     

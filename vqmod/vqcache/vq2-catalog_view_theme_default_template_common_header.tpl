@@ -131,7 +131,7 @@ if(isset($in_specimen)){
                                     <!--href="<?php //echo $login; ?>"--><li><a  href="#loginpopupt_form" class="loginpopupt" ><?php echo $text_login; ?></a></li>
                                     <?php } ?>
                                   </ul>
-                       <a href="<?php echo $contact; ?>"> Help <i class="fa fa-comment"></i></a>
+                       <!--<a href="<?php echo $contact; ?>"> Help <i class="fa fa-comment"></i></a>-->
                        <!--<a href="#"> Blog <i class="fa fa-feed"></i></a> -->
                         
                         <div class="clear"></div>
