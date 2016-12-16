@@ -215,13 +215,14 @@ class ControllerBlogCategory extends Controller {
 		$data['column_right'] = $this->load->controller('common/column_right');
 		$data['content_top'] = $this->load->controller('common/content_top');
 		$data['content_bottom'] = $this->load->controller('common/content_bottom');
+		//echo "<pre>"; print_r($data); exit;
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
 
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/blog/category.tpl')) {
 			$this->response->setOutput($this->load->view($this->config->get('config_template') . '/template/blog/category.tpl', $data));
 		} else {
-			$this->response->setOutput($this->load->view('default/template/blog/category.tpl', $data));
+			$this->response->setOutput($this->load->view('blog/category.tpl', $data));
 		}
 		
 	}

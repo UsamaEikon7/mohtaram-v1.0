@@ -127,8 +127,8 @@ if(isset($in_specimen)){
                                     <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li> -->
                                     <li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
                                     <?php } else { ?>
-                                    <li><a href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
-                                    <li><a href="<?php echo $login; ?>"><?php echo $text_login; ?></a></li>
+                                    <!--href="<?php //echo $register; ?>"--><li><a  href="#loginpopupt_form" class="loginpopupt"><?php echo $text_register; ?></a></li>
+                                    <!--href="<?php //echo $login; ?>"--><li><a  href="#loginpopupt_form" class="loginpopupt" ><?php echo $text_login; ?></a></li>
                                     <?php } ?>
                                   </ul>
                        <a href="<?php echo $contact; ?>"> Help <i class="fa fa-comment"></i></a>

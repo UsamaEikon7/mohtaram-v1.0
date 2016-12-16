@@ -89,7 +89,7 @@ class ControllerBlogPost extends Controller {
 			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/blog/post.tpl')) {
 				$this->response->setOutput($this->load->view($this->config->get('config_template') . '/template/blog/post.tpl', $data));
 			} else {
-				$this->response->setOutput($this->load->view('default/template/blog/post.tpl', $data));
+				$this->response->setOutput($this->load->view('blog/post.tpl', $data));
 			}
 		} else {
 			$data['breadcrumbs'][] = array(
@@ -119,7 +119,7 @@ class ControllerBlogPost extends Controller {
 			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/error/not_found.tpl')) {
 				$this->response->setOutput($this->load->view($this->config->get('config_template') . '/template/error/not_found.tpl', $data));
 			} else {
-				$this->response->setOutput($this->load->view('default/template/error/not_found.tpl', $data));
+				$this->response->setOutput($this->load->view('error/not_found.tpl', $data));
 			}
 		}
 	}
@@ -166,7 +166,7 @@ class ControllerBlogPost extends Controller {
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/blog/comment.tpl')) {
 			$this->response->setOutput($this->load->view($this->config->get('config_template') . '/template/blog/comment.tpl', $data));
 		} else {
-			$this->response->setOutput($this->load->view('default/template/blog/comment.tpl', $data));
+			$this->response->setOutput($this->load->view('blog/comment.tpl', $data));
 		}
 	}
 

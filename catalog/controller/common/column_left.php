@@ -38,7 +38,7 @@ class ControllerCommonColumnLeft extends Controller {
 		if (!$layout_id) {
 			$layout_id = $this->config->get('config_layout_id');
 		}
-
+		//echo $layout_id; exit;
 		$this->load->model('extension/module');
 
 		$data['modules'] = array();
@@ -47,6 +47,7 @@ class ControllerCommonColumnLeft extends Controller {
 		//echo "<pre>";print_r($modules); exit;
 
 		foreach ($modules as $module) {
+			//echo $module['code']; exit;
 			$part = explode('.', $module['code']);
 			//print_r($part); exit;
 
@@ -57,9 +58,10 @@ class ControllerCommonColumnLeft extends Controller {
 					$data['modules'][] = $module_data;
 				}
 			}
-
+			//echo "<pre>";print_r($module_data); exit;
 			if (isset($part[1])) {
 				$setting_info = $this->model_extension_module->getModule($part[1]);
+				//echo "<pre>";print_r($setting_info); exit;
 				if ($setting_info && $setting_info['status']) {
 					$output = $this->load->controller('extension/module/' . $part[0], $setting_info);
 					//echo "<pre>";print_r($output); exit;

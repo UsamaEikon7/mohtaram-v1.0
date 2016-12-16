@@ -70,7 +70,7 @@
 <!-- External JavaScripts
 	============================================= -->
     <script type="text/javascript" src="catalog/view/javascript/bootstrap/js/bootstrap.min.js"></script>
-   	<script type="text/javascript" src="catalog/view/javascript/bootstrap/js/plugins.js"></script>
+   <!--	<script type="text/javascript" src="catalog/view/javascript/bootstrap/js/plugins.js"></script>-->
 
 	<!-- Footer Scripts
 	============================================= -->
@@ -95,3 +95,9 @@
 <script src="catalog/view/theme/default/js/grayscale.js"></script>
 
 </html>
+<?php if ($modules) { ?>
+
+  <?php foreach ($modules as $module) { ?>
+  <?php echo $module; ?>
+  <?php } ?>
+<?php } ?>

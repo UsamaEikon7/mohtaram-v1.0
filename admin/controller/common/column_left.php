@@ -417,6 +417,13 @@ class ControllerCommonColumnLeft extends Controller {
 					'children' => array()		
 				);	
 			}
+			if ($this->user->hasPermission('access', 'module/advancedlogin')) {
+				$system[] = array(
+					'name'	   => "Social Logins",
+					'href'     => $this->url->link('module/advancedlogin', 'token=' . $this->session->data['token'], true),
+					'children' => array()		
+				);	
+			}	
 		
 			// Users
 			$user = array();
@@ -858,6 +865,9 @@ class ControllerCommonColumnLeft extends Controller {
 					'children' => $careers
 				);	
 			}
+			// settning for facebook and other login popup
+			
+			
 			// Stats
 			$data['text_complete_status'] = $this->language->get('text_complete_status');
 			$data['text_processing_status'] = $this->language->get('text_processing_status');
