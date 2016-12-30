@@ -1023,7 +1023,7 @@ border-radius:10px;
 }
 
 .archive .archive-article h2 {
-    font-family: 'mullerbold' !important;font-size: 38px;color: #fff; font-weight:normal; 
+    font-family: 'Cinzel-Regular' !important;font-size: 38px;color: #fff; font-weight:normal; 
 }
 
 .leftrightmargin {
@@ -1124,3 +1124,9 @@ Faisal CSS for My Accounts Option
 .padding-all {
 	padding: 5% 0% 5% 0%;
 	}
+.common-home .slider-caption h2 {
+	margin: 80px 0 20px 0;
+	}
+.common-home .slider-caption a.collection-btn {
+    margin: 140px 0 0 0;
+}		

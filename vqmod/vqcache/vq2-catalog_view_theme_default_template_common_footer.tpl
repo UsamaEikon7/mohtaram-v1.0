@@ -64,7 +64,12 @@
             
     </div><!--footer bg-->
     
+<?php if (!empty($modules)) { ?>
 
+  <?php foreach ($modules as $module) { ?>
+  <?php echo $module; ?>
+  <?php } ?>
+<?php } ?>
 
 			<script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>
 	
@@ -316,10 +321,11 @@ $('select[name=\'country_id\']').trigger('change');
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
+      alert('Blah blah');
+	  if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 1000);
+        }, 'slow');
         return false;
       }
     }
@@ -329,9 +335,3 @@ $('select[name=\'country_id\']').trigger('change');
 <script src="catalog/view/theme/default/js/grayscale.js"></script>
 
 </html>
-<?php if ($modules) { ?>
-
-  <?php foreach ($modules as $module) { ?>
-  <?php echo $module; ?>
-  <?php } ?>
-<?php } ?>

@@ -4,7 +4,7 @@ class ControllerCommonHeader extends Controller {
 		// Analytics
 		$this->load->model('extension/extension');
 
-		$data['analytics'] = array();
+		//$data['analytics'] = array();
 
 		$analytics = $this->model_extension_extension->getExtensions('analytics');
 
@@ -145,6 +145,14 @@ class ControllerCommonHeader extends Controller {
 			$data['class'] = str_replace('/', '-', $this->request->get['route']) . $class;
 		} else {
 			$data['class'] = 'common-home';
+		}
+		
+		
+		/*
+		Check if its home withour the url or not
+		 */
+		if (!isset($this->request->get['route'])){
+			$data['ishome']=1;
 		}
 		
 		return $this->load->view('common/header', $data);

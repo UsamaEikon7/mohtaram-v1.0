@@ -116,7 +116,40 @@ class ControllerCommonFooter extends Controller {
 
 			$this->model_tool_online->addOnline($ip, $this->customer->getId(), $url, $referer);
 		}
-
+		$data['modules']	=	$this->getadvancedloginmodule();
+		//print_r($data['modules']); exit;
 		return $this->load->view('common/footer', $data);
 	}
+	public function getadvancedloginmodule(){
+		$code	=	'advancedlogin.38';
+		$part = explode('.', $code);
+			//print_r($part); exit;
+
+			if (isset($part[0]) && $this->config->get($part[0] . '_status')) {
+				$module_data = $this->load->controller('extension/module/' . $part[0]);
+
+				if ($module_data) {
+					$data['modules'][] = $module_data;
+				}
+			}
+			//echo "<pre>";print_r($module_data); exit;
+			if (isset($part[1])) {
+				$setting_info = $this->model_extension_module->getModule($part[1]);
+				//echo "<pre>";print_r($setting_info); exit;
+				if ($setting_info && $setting_info['status']) {
+					$output = $this->load->controller('extension/module/' . $part[0], $setting_info);
+					//echo "<pre>";print_r($output); exit;
+				
+					if ($output) {
+						$data['modules'][] = $output;
+					// this else funciton is added by Zeeshan khuwaja in order to add values into  teh syst
+					}else{
+						$output = $this->load->controller('module/' . $part[0], $setting_info);
+						$data['modules'][] = $output;
+						}
+					//echo "<pre>";print_r($data['modules']); exit;
+				}
+			}
+		return $data['modules'];
+		}
 }

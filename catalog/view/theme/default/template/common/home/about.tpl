@@ -22,7 +22,6 @@
 distracted by the readable content of a page when
 The point of using Lorem Ipsum is that it hasen
 opposed to using Content here.<br /><br />
-<span><img src="image/catalog/story-sep.jpg" alt=""/></span>
 </p>
 
 <a href="#" class="collection-btn fadeInUp hvr-fade">VIEW OUR STORY</a>
