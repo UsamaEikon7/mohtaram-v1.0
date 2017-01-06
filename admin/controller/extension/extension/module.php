@@ -184,6 +184,7 @@ class ControllerExtensionExtensionModule extends Controller {
 	protected function validate() {
 		if (!$this->user->hasPermission('modify', 'extension/extension/module')) {
 			$this->error['warning'] = "This fucking errors is coming all because of the configuration";//$this->language->get('error_permission');
+			$this->error['warning'] = $this->language->get('error_permission');
 		}
 
 		return !$this->error;

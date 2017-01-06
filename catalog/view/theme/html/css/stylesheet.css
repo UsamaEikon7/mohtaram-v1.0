@@ -118,3 +118,16 @@
     font-style: normal;
 
 }
+
+@font-face {
+  font-family: 'Cinzel-Black';
+  src: url('../fonts/Cinzel-Black.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Cinzel-Bold';
+  src: url('../fonts/Cinzel-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Cinzel-Regular';
+  src: url('../fonts/Cinzel-Regular.ttf') format('truetype');
+}

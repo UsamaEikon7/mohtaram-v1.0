@@ -121,7 +121,7 @@ class ControllerCommonFooter extends Controller {
 		return $this->load->view('common/footer', $data);
 	}
 	public function getadvancedloginmodule(){
-		$code	=	'advancedlogin.38';
+		$code	=	'advancedlogin.34';
 		$part = explode('.', $code);
 			//print_r($part); exit;
 

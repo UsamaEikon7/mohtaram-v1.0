@@ -16,25 +16,41 @@
 <meta name="keywords" content= "<?php echo $keywords; ?>" />
 <?php } ?>
 
-<!-- Geenral/Common CSS -->
-<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+<!-- Geenral/Common CSS --> 
+<link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> 
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/css/bootstrap.min.css"/>
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/css/jquery.bxslider.css" />
+
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/css/font-awesome.min.css"/>
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/css/hover.css"/>
 <link rel="stylesheet" href="catalog/view/theme/default/css/font-icons.css" type="text/css" />
 <link rel="stylesheet" href="catalog/view/theme/default/css/animate.css" type="text/css" />
+<link href="catalog/view/theme/default/css/stylesheet.css" rel="stylesheet" type="text/css" >
 <?php
 if(isset($in_specimen)){
  ?>
 <link rel="stylesheet" href="catalog/view/theme/default/specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8" />
 <link rel="stylesheet" href="catalog/view/theme/default/css/stylesheet.css" type="text/css" charset="utf-8" />
 <?php } ?>
+
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/css/grayscale.css"/>
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/css/custom.css"/>
 
+
 <!-- <script type="text/javascript" src="catalog/view/theme/default/js/jquery.js"></script> -->
 <script type="text/javascript" src="catalog/view/javascript/jquery/jquery-2.1.1.min.js"></script>
+
+<style>
+ul.nav li.dropdown:hover > div.dropdown-menu {
+    display: block;    
+}
+.social-links a.dropdown:hover > .dropdown-menu {
+	display:block;
+	}
+
+</style>
+
 
 <!-- <script src="catalog/view/theme/default/js/jquery.bxslider.min.js"></script> -->
 
@@ -57,33 +73,29 @@ if(isset($in_specimen)){
 }?>
 <!-- end for reserved for extensio and backend processes -->
 
+
 <script>
     $(document).ready(function() {  
 		var stickyNavTop = $('.nav').offset().top;  
-		//  alert('stickyNavTop = '+stickyNavTop);
-		stickyNavTop	=	stickyNavTop * 1.5;  
-		var stickyNav = function(){  
-		//alert('stickyNav = '+stickyNav);
 		  
+		var stickyNav = function(){  
 		var scrollTop = $(window).scrollTop();  
-		//alert('scrollTop = '+scrollTop);
-		
-		if (scrollTop > stickyNavTop) { 
-			//alert('Blah Bah');  
-			$('.header').addClass('sticky',{duration:1500});  
+			   
+		if (scrollTop > stickyNavTop) {   
+			$('.header').addClass('sticky');  
 		} else {  
-			$('.header').removeClass('sticky',{duration:1500});   
+			$('.header').removeClass('sticky');   
 		}  
 		};  
 		  
-		//stickyNav();  
+		stickyNav();  
 		  
-		//$(window).scroll(function() {  
-			//alert('Blah');
-			//stickyNav();
-		//});  
+		$(window).scroll(function() {  
+			stickyNav();
 		});  
-</script>
+		});  
+
+	</script>
 <!-- This is the end of importing files into the template -->
 </head>
 <body class="stretched <?php echo $class; ?> <?php if(isset($body_class)){echo $body_class;} ?>">

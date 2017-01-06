@@ -1,9 +1,10 @@
 <?php echo $header; ?>
 <?php echo $homebanner; ?>
+<?php echo $about; ?>
 <?php echo $section2; ?>
 <?php echo $blog; ?>
 <?php echo $campaign; ?>
-<?php echo $about; ?>
+
 <?php echo $gallery; ?>
 
 

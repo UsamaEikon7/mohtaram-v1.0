@@ -87,12 +87,9 @@
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      alert('Blah blah');
-	  if (target.length) {
         $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 'slow');
-        return false;
+          scrollTop: target.offset().top;
+          return false;
       }
     }
   });

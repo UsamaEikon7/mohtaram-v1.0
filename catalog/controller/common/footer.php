@@ -20,6 +20,10 @@ class ControllerCommonFooter extends Controller {
 		$data['text_wishlist'] = $this->language->get('text_wishlist');
 		$data['text_newsletter'] = $this->language->get('text_newsletter');
 
+            $data['text_blog'] = $this->language->get('text_blog'); 
+            $data['blog'] = $this->url->link('blog/category'); 
+            
+
 		$this->load->model('catalog/information');
 
 		$data['informations'] = array();
@@ -76,7 +80,7 @@ class ControllerCommonFooter extends Controller {
 		return $this->load->view('common/footer', $data);
 	}
 	public function getadvancedloginmodule(){
-		$code	=	'advancedlogin.38';
+		$code	=	'advancedlogin.34';
 		$part = explode('.', $code);
 			//print_r($part); exit;
 

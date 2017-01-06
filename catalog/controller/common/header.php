@@ -4,7 +4,6 @@ class ControllerCommonHeader extends Controller {
 		// Analytics
 		$this->load->model('extension/extension');
 
-		//$data['analytics'] = array();
 
 		$analytics = $this->model_extension_extension->getExtensions('analytics');
 

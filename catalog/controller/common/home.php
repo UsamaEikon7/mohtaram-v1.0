@@ -28,6 +28,7 @@ class ControllerCommonHome extends Controller {
 		$data['v_section_2_b'] 	= 	$this->model_design_banner->getBanner(11);
 		$data['v_section_2_c'] 	= 	$this->model_design_banner->getBanner(12);
 		$data['v_gallery'] 		= 	$this->model_design_banner->getBanner(13);
+		//  print_r($data['v_gallery']); exit;
 		// all those data passes into this variable will only be sent to blog html
 		
 		$blogdata['banner1']	=	$this->model_design_banner->getBanner(15);
@@ -43,6 +44,7 @@ class ControllerCommonHome extends Controller {
 		$data['homebanner']		=	 $this->load->view('common/home/homebanner', $data);
 		$data['section2']		=	 $this->load->view('common/home/section2', $data);
 		$data['gallery']		=	 $this->load->view('common/home/gallery', $data);
+		//print_r($data['gallery']); exit;
 		$data['blog']			=	 $this->load->view('common/home/blog', $blogdata);
 		$data['campaign']		=	 $this->load->view('common/home/campaign', $campaign);
 		$data['about']			=	 $this->load->view('common/home/about', $data);

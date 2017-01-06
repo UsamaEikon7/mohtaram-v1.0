@@ -281,11 +281,6 @@ var SEMICOLON = SEMICOLON || {};
 			if( !elementScrollEasing ) { elementScrollEasing = 'easeOutQuad'; }
 
 			$goToTopEl.click(function() {
-				//alert("Blah blah"); exit;
-			$("html, body").animate({ scrollTop: 0 }, "slow");
-				//$('body,html').stop(true).animate({
-					//'scrollTop': 0
-				//}, Number( elementScrollSpeed ), elementScrollEasing );
 				return false;
 			});
 		},

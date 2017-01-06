@@ -185,8 +185,6 @@ class ControllerProductCategory extends Controller {
 				$product_total = $this->model_catalog_product->getTotalProducts($filter_data);
 	
 				$results = $this->model_catalog_product->getProducts($filter_data);
-				//print_r($results); exit;
-				if(!empty($results)) {
 				foreach ($results as $result) {
 					if ($result['image']) {
 						$image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
@@ -396,64 +394,6 @@ class ControllerProductCategory extends Controller {
 					$url .= '&filter=' . $this->request->get['filter'];
 				}
 	
-
-            
-				if (isset($this->request->get['sort'])) {
-					$url .= '&sort=' . $this->request->get['sort'];
-				}
-	
-				if (isset($this->request->get['order'])) {
-					$url .= '&order=' . $this->request->get['order'];
-				}
-	
-				if (isset($this->request->get['page'])) {
-					$url .= '&page=' . $this->request->get['page'];
-				}
-	
-				if (isset($this->request->get['limit'])) {
-					$url .= '&limit=' . $this->request->get['limit'];
-				}
-	
-				$data['breadcrumbs'][] = array(
-					'text' => "No Product Found",
-					'href' => $this->url->link('product/category', $url)
-				);
-	
-				$this->document->setTitle("No Product Found");
-	
-				$data['heading_title'] = $this->language->get("No Product Found");
-	
-				$data['text_error'] = $this->language->get("No Product Found");
-	
-				$data['button_continue'] = $this->language->get('button_continue');
-	
-				$data['continue'] = $this->url->link('product/category');
-	
-				$this->response->addHeader($this->request->server['SERVER_PROTOCOL'] . ' 404 Not Found');
-	
-				$data['column_left'] = $this->load->controller('common/column_left');
-				$data['column_right'] = $this->load->controller('common/column_right');
-				$data['content_top'] = $this->load->controller('common/content_top');
-				$data['content_bottom'] = $this->load->controller('common/content_bottom');
-				$data['footer'] = $this->load->controller('common/footer');
-				$data['header'] = $this->load->controller('common/header');
-	
-				$this->response->setOutput($this->load->view('error/not_found', $data));
-			}
-			}else {
-				/* In case if we have the CATEGORY but no product in it */
-				
-				$url = '';
-	
-				if (isset($this->request->get['path'])) {
-					$url .= '&path=' . $this->request->get['path'];
-				}
-	
-				if (isset($this->request->get['filter'])) {
-					$url .= '&filter=' . $this->request->get['filter'];
-				}
-	
-            
 				if (isset($this->request->get['sort'])) {
 					$url .= '&sort=' . $this->request->get['sort'];
 				}
