@@ -63,7 +63,7 @@
             <div class="record-details column col-xs-12 col-sm-7">
                 <div class="btn-toolbar">
                     <div class="add-edit-delete-group btn-group">
-                        <button id="add-service" class="btn btn-primary">
+                        <button id="add-service" class="btn btn-success">
                             <span class="glyphicon glyphicon-plus"></span>
                             <?php echo $this->lang->line('add'); ?>
                         </button>
@@ -78,7 +78,7 @@
                     </div>
 
                     <div class="save-cancel-group btn-group" style="display:none;">
-                        <button id="save-service" class="btn btn-primary">
+                        <button id="save-service" class="btn btn-success">
                             <span class="glyphicon glyphicon-ok"></span>
                             <?php echo $this->lang->line('save'); ?>
                         </button>
@@ -177,7 +177,7 @@
             <div class="record-details col-xs-12 col-sm-7">
                 <div class="btn-toolbar">
                     <div class="add-edit-delete-group btn-group">
-                        <button id="add-category" class="btn btn-primary">
+                        <button id="add-category" class="btn btn-success">
                             <span class="glyphicon glyphicon-plus glyphicon glyphicon-white"></span>
                             <?php echo $this->lang->line('add'); ?>
                         </button>
@@ -192,7 +192,7 @@
                     </div>
 
                     <div class="save-cancel-group btn-group" style="display:none;">
-                        <button id="save-category" class="btn btn-primary">
+                        <button id="save-category" class="btn btn-success">
                             <span class="glyphicon glyphicon-ok glyphicon glyphicon-white"></span>
                             <?php echo $this->lang->line('save'); ?>
                         </button>

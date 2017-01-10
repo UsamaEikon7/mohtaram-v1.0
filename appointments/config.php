@@ -24,6 +24,7 @@
  * If you are updating from version 1.0 you will have to create a new "config.php"
  * file because the old "configuration.php" is not used anymore.
  */
+ define ('MainWebsite','http://localhost/opencart');
 class Config {
 
     // ------------------------------------------------------------------------
@@ -33,13 +34,13 @@ class Config {
     const BASE_URL      = 'http://localhost/opencart/appointments';
     const LANGUAGE      = 'english';
     const DEBUG_MODE    = FALSE;
-
+    	
     // ------------------------------------------------------------------------
     // DATABASE SETTINGS
     // ------------------------------------------------------------------------
 
     const DB_HOST       = 'localhost';
-    const DB_NAME       = 'appointment';
+    const DB_NAME       = 'opencart';
     const DB_USERNAME   = 'root';
     const DB_PASSWORD   = '';
 

@@ -72,7 +72,7 @@
         <div id="calendar-actions" class="col-xs-12 col-md-7">
             <?php if (($role_slug == DB_SLUG_ADMIN || $role_slug == DB_SLUG_PROVIDER)
                     && Config::GOOGLE_SYNC_FEATURE == TRUE): ?>
-                <button id="google-sync" class="btn btn-primary"
+                <button id="google-sync" class="btn btn-success"
                         title="<?php echo $this->lang->line('trigger_google_sync_hint'); ?>">
                     <span class="glyphicon glyphicon-refresh"></span>
                     <span><?php echo $this->lang->line('synchronize'); ?></span>
@@ -238,7 +238,7 @@
                                         title="<?php echo $this->lang->line('clear_fields_add_existing_customer_hint'); ?>"
                                         type="button"><?php echo $this->lang->line('new'); ?>
                                 </button>
-                                <button id="select-customer" class="btn btn-primary btn-xs"
+                                <button id="select-customer" class="btn btn-success btn-xs"
                                         title="<?php echo $this->lang->line('pick_existing_customer_hint'); ?>"
                                         type="button"><?php echo $this->lang->line('select'); ?>
                                 </button>
@@ -326,7 +326,7 @@
             </div>
 
             <div class="modal-footer footer">
-                <button id="save-appointment" class="btn btn-primary">
+                <button id="save-appointment" class="btn btn-success">
                     <?php echo $this->lang->line('save'); ?>
                 </button>
                 <button id="cancel-appointment" class="btn btn-default" data-dismiss="modal">
@@ -401,7 +401,7 @@
             </div>
 
             <div class="modal-footer">
-                <button id="save-unavailable" class="btn btn-primary">
+                <button id="save-unavailable" class="btn btn-success">
                     <?php echo $this->lang->line('save'); ?>
                 </button>
                 <button id="cancel-unavailable" class="btn btn-default" data-dismiss="modal">
@@ -438,7 +438,7 @@
             </div>
 
             <div class="modal-footer">
-                <button id="select-calendar" class="btn btn-primary">
+                <button id="select-calendar" class="btn btn-success">
                     <?php echo $this->lang->line('select'); ?>
                 </button>
                 <button id="close-calendar" class="btn btn-default" data-dismiss="modal">

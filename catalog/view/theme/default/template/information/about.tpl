@@ -19,13 +19,13 @@
                     <div class="spece"></div>
                     <?php echo $description; ?>
 
-                    <a href="<?php echo $continue; ?>" class="readmore-btn hvr-bounce-to-left">VIEW OUR STORY</a>
+                    <a href="<?php echo HTTP_SERVER ?>index.php?route=information/brands" class="readmore-btn hvr-bounce-to-left">VIEW OUR STORY</a>
                     
                     <div class="spece"></div><div class="spece"></div><div class="spece"></div>
                     <p>Other pages of interests:<br />
-                    <a href="#">Careers</a><br />
-                    <a href="#">Help</a><br />
-                    <a href="#">Legal Informations</a>
+                    <a href="<?php echo HTTP_SERVER ?>index.php?route=information/career">Careers</a><br />
+                    <a href="<?php echo HTTP_SERVER ?>index.php?route=information/contact">Help</a><br />
+                    <a href="<?php echo HTTP_SERVER ?>index.php?route=information/information&information_id=5">Legal Informations</a>
                     </p>
                 
                 </div><!--our story-->

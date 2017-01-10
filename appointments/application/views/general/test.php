@@ -9,7 +9,7 @@
         $('#test-results').text(passedTestsNumber + ' / ' + totalTestsNumber + ' Passed');
 
         if (passedTestsNumber == totalTestsNumber) {
-            $('#test-header').css('background-color', '#3DD481');
+            $('#test-header').css('background-color', '#DEC57F');
         } else {
             $('#test-header').css('background-color', '#D43D3D');
         }

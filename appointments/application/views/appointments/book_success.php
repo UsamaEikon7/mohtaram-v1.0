@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#35A768">
+    <meta name="theme-color" content="#DEC57F">
     <title><?php echo $this->lang->line('appointment_registered') . ' - ' . $company_name; ?></title>
 
     <?php
@@ -45,7 +45,7 @@
                         echo '
                             <h3>' . $this->lang->line('appointment_registered') . '</h3>
                             <p>' . $this->lang->line('appointment_details_was_sent_to_you') . '</p>
-                            <a href="' . site_url() . '" class="btn btn-success btn-large">
+                            <a href="'.MainWebsite.'" class="btn btn-success btn-large">
                                 <span class="glyphicon glyphicon-calendar"></span> ' .
                                 $this->lang->line('go_to_booking_page') . '
                             </a>
@@ -53,7 +53,7 @@
 
                         if ($this->config->item('google_sync_feature')) {
                             echo '
-                                <button id="add-to-google-calendar" class="btn btn-primary">
+                                <button id="add-to-google-calendar" class="btn btn-success">
                                     <span class="glyphicon glyphicon-plus"></span>
                                     ' . $this->lang->line('add_to_google_calendar') . '
                                 </button>';

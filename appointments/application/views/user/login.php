@@ -134,7 +134,7 @@
             </div>
             <br>
 
-            <button type="submit" id="login" class="btn btn-primary">
+            <button type="submit" id="login" class="btn btn-success">
             	<?php echo $this->lang->line('login'); ?>
             </button>
 

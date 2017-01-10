@@ -174,7 +174,7 @@ window.BackendCalendarTableView = window.BackendCalendarTableView || {};
                             + notes
                             + '<hr>' +
                         '<center>' +
-                            '<button class="edit-popover btn btn-primary">' + EALang['edit'] + '</button>' +
+                            '<button class="edit-popover btn btn-success">' + EALang['edit'] + '</button>' +
                             '<button class="delete-popover btn btn-danger">' + EALang['delete'] + '</button>' +
                             '<button class="close-popover btn btn-default" data-po=' + event.target + '>' + EALang['close'] + '</button>' +
                         '</center>';
@@ -202,7 +202,7 @@ window.BackendCalendarTableView = window.BackendCalendarTableView || {};
                             + entry.customer.last_name
                             + '<hr>' +
                         '<center>' +
-                            '<button class="edit-popover btn btn-primary">' + EALang['edit'] + '</button>' +
+                            '<button class="edit-popover btn btn-success">' + EALang['edit'] + '</button>' +
                             '<button class="delete-popover btn btn-danger">' + EALang['delete'] + '</button>' +
                             '<button class="close-popover btn btn-default" data-po=' + event.target + '>' + EALang['close'] + '</button>' +
                         '</center>';

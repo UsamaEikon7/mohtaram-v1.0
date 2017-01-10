@@ -16,12 +16,10 @@
 <meta name="keywords" content= "<?php echo $keywords; ?>" />
 <?php } ?>
 
-
-<!-- Geenral/Common CSS --> 
-<link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> 
+<!-- Geenral/Common CSS -->
+<link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/css/bootstrap.min.css"/>
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/css/jquery.bxslider.css" />
-
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/css/font-awesome.min.css"/>
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/css/hover.css"/>
 <link rel="stylesheet" href="catalog/view/theme/default/css/font-icons.css" type="text/css" />
@@ -31,26 +29,12 @@
 if(isset($in_specimen)){
  ?>
 <link rel="stylesheet" href="catalog/view/theme/default/specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8" />
-<link rel="stylesheet" href="catalog/view/theme/default/css/stylesheet.css" type="text/css" charset="utf-8" />
 <?php } ?>
-
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/css/grayscale.css"/>
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/default/css/custom.css"/>
 
-
 <!-- <script type="text/javascript" src="catalog/view/theme/default/js/jquery.js"></script> -->
 <script type="text/javascript" src="catalog/view/javascript/jquery/jquery-2.1.1.min.js"></script>
-
-<style>
-ul.nav li.dropdown:hover > div.dropdown-menu {
-    display: block;    
-}
-.social-links a.dropdown:hover > .dropdown-menu {
-	display:block;
-	}
-
-</style>
-
 
 <!-- <script src="catalog/view/theme/default/js/jquery.bxslider.min.js"></script> -->
 
@@ -72,7 +56,6 @@ ul.nav li.dropdown:hover > div.dropdown-menu {
 <?php }
 }?>
 <!-- end for reserved for extensio and backend processes -->
-
 
 <script>
     $(document).ready(function() {  
@@ -157,27 +140,64 @@ ul.nav li.dropdown:hover > div.dropdown-menu {
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav text-center">
-                <?php if ($categories) { ?>
-                <?php foreach ($categories as $category) { ?>
-                <?php if ($category['children']) { ?>
-                <li class="dropdown"><a href="<?php echo $category['href']; ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category['name']; ?></a>
-                  <div class="dropdown-menu">
-                    <div class="dropdown-inner">
-                      <?php foreach (array_chunk($category['children'], ceil(count($category['children']) / $category['column'])) as $children) { ?>
-                      <ul class="list-unstyled">
-                        <?php foreach ($children as $child) { ?>
-                        <li><a href="<?php echo $child['href']; ?>"><?php echo $child['name']; ?></a></li>
-                        <?php } ?>
+                <li><a href="<?php echo $base; ?>">Home</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Mede Proudly in Pakistan</a>
+                  <ul class="dropdown-menu list-unstyled">
+                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Mohtaram Family</a>
+                      <ul class="dropdown-menu list-unstyled">
+                        <li ><a href="<?php echo $base; ?>index.php?route=information/information&information_id=4" >About Us</a> </li>
+                        <li ><a href="<?php echo $base; ?>index.php?route=information/team" >Our Team</a> </li>
+                        <li ><a href="<?php echo $base; ?>index.php?route=information/brands" >Our Brand Story</a> </li>
+                        <li ><a href="<?php echo $base; ?>index.php?route=information/workshop" >Our Workshop</a> </li>
                       </ul>
-                      <?php } ?>
-                    </div>
-                    <a href="<?php echo $category['href']; ?>" class="see-all"><?php echo $text_all; ?> <?php echo $category['name']; ?></a> </div>
+                    </li>
+                  </ul>
                 </li>
-                <?php } else { ?>
-                <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
-                <?php } ?>
-                <?php } ?>
-                <?php } ?>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Collection</a>
+                  <ul class="dropdown-menu list-unstyled">
+                    <li><a href="<?php echo $base; ?>index.php?route=product/category&path=67">Peshawer Zalmi</a></li>
+                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Clothing</a>
+                      <ul class="dropdown-menu list-unstyled">
+                        <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=62"  >Suits</a> </li>
+                        <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=60"  >Jackets</a> </li>
+                        <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=61" >Pants</a> </li>
+                        <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=64" >Shalwar Kameez</a> </li>
+                         <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=65" >Sherwani</a> </li>
+                        <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=63" >Waistcoat</a> </li>
+                        <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=59" >Shirts</a> </li>
+                        
+                      </ul>
+                    </li>
+                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Accessories</a>
+                      <ul class="dropdown-menu list-unstyled">
+                        <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=69" >Ties</a> </li>
+                        <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=71" >Cufflinks</a> </li>
+                        <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=70" >Pocket Squares</a> </li>
+                        <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=72" >Bow Ties</a> </li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Sale</a></li>
+                    <li ><a href="<?php echo $base; ?>index.php?route=product/category"  >All Collection</a> </li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Bespoke</a>
+                  <ul class="dropdown-menu list-unstyled">
+                    <li><a href="#">Book Your Appointment</a></li>
+                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Partner Brands</a>
+                      <ul class="dropdown-menu list-unstyled">
+                        <li ><a href="<?php echo $base; ?>index.php?route=information/partners#partner1" >Peshawer Zalmi</a> </li>
+                        <li ><a href="<?php echo $base; ?>index.php?route=information/partners#partner2" >Zaiena</a> </li>
+                        <li ><a href="<?php echo $base; ?>index.php?route=information/partners#partner3" >Partner 3</a> </li>
+            
+                        
+                      </ul>
+                    </li>
+                    
+                    <li><a href="<?php echo $base; ?>index.php?route=information/testimonials">Client Diaries</a></li>
+                  </ul>
+                </li>
+                <li><a href="<?php echo $base; ?>index.php?route=information/contact">Contact</a></li>
+               
                 <!--  Here we can add other menu links-->
               </ul>
             </div>

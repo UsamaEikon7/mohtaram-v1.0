@@ -25,7 +25,7 @@ opposed to using Content here.<br /><br />
 <!-- <span><img src="image/catalog/story-sep.jpg" alt=""/></span> -->
 </p>
 
-<a href="#" class="collection-btn fadeInUp hvr-fade">VIEW OUR STORY</a>
+<a href="<?php echo HTTP_SERVER ?>index.php?route=information/brands" class="collection-btn fadeInUp hvr-fade">VIEW OUR STORY</a>
                                    
 								</div>
                 

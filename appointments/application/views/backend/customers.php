@@ -51,7 +51,7 @@
             <div class="btn-toolbar">
                 <div id="add-edit-delete-group" class="btn-group">
                     <?php if ($privileges[PRIV_CUSTOMERS]['add'] == TRUE) { ?>
-                    <button id="add-customer" class="btn btn-primary">
+                    <button id="add-customer" class="btn btn-success">
                         <span class="glyphicon glyphicon-plus"></span>
                         <?php echo $this->lang->line('add'); ?>
                     </button>
@@ -73,7 +73,7 @@
                 </div>
 
                 <div id="save-cancel-group" class="btn-group" style="display:none;">
-                    <button id="save-customer" class="btn btn-primary">
+                    <button id="save-customer" class="btn btn-success">
                         <span class="glyphicon glyphicon-ok"></span>
                         <?php echo $this->lang->line('save'); ?>
                     </button>

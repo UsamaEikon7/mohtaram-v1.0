@@ -1,11 +1,11 @@
 <?php echo $header; ?>
-
+<!--
 <ol class="breadcrumb">
   <?php foreach ($breadcrumbs as $breadcrumb) { ?>
   <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
   <?php } ?>
 </ol>
-
+-->
 <section class="moh-branding">
   <div class="row">
     <div class="col-md-6 col-xs-12 no-pad">

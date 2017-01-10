@@ -134,7 +134,7 @@
 
             <br>
 
-            <button type="submit" id="get-new-password" class="btn btn-primary btn-large">
+            <button type="submit" id="get-new-password" class="btn btn-success btn-large">
                 <?php echo $this->lang->line('regenerate_password'); ?>
             </button>
 

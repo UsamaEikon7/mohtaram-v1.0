@@ -17,7 +17,7 @@
 
 		</section>
 <section class="moh-branding">
-            <div class="row">
+            <div class="row" id="partner1">
     <div class="col-md-6 col-xs-12 no-pad">
       <div class="bg-image-brand" style="background:url(image/branding/tabla.png) center center no-repeat ; background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"></div>
     </div>
@@ -34,7 +34,7 @@
       <!--/.OWL CAROUSEL2 END--> 
     </div>
   </div>
-  <div class="row">
+  <div class="row" id="partner2">
     <div class="col-md-6 col-sm-12 col-xs-12 white-col">
       <div class="row">
         <div class="wrap-about">
@@ -51,7 +51,7 @@
       <div class="bg-image-brand" style="background:url(image/branding/derwish.png) center center no-repeat ;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"></div>
     </div>
   </div>
-             <div class="row">
+             <div class="row" id="partner3">
     <div class="col-md-6 col-xs-12 no-pad">
       <div class="bg-image-brand" style="background:url(image/branding/tabla.png) center center no-repeat ; background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"></div>
     </div>

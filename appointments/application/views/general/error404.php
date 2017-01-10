@@ -108,7 +108,7 @@
 
         <br>
 
-        <a href="<?php echo site_url(); ?>" class="btn btn-primary btn-large">
+        <a href="<?php echo site_url(); ?>" class="btn btn-success btn-large">
             <span class="glyphicon glyphicon-calendar"></span>
             <?php echo $this->lang->line('book_appointment_title'); ?>
         </a>

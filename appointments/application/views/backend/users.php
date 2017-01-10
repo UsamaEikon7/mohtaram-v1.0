@@ -80,7 +80,7 @@
             <div class="record-details column col-xs-12 col-sm-7">
                 <div class="btn-toolbar">
                     <div class="add-edit-delete-group btn-group">
-                        <button id="add-admin" class="btn btn-primary">
+                        <button id="add-admin" class="btn btn-success">
                             <span class="glyphicon glyphicon-plus"></span>
                             <?php echo $this->lang->line('add'); ?>
                         </button>
@@ -95,7 +95,7 @@
                     </div>
 
                     <div class="save-cancel-group btn-group" style="display:none;">
-                        <button id="save-admin" class="btn btn-primary">
+                        <button id="save-admin" class="btn btn-success">
                             <span class="glyphicon glyphicon-ok"></span>
                             <?php echo $this->lang->line('save'); ?>
                         </button>
@@ -229,7 +229,7 @@
             <div class="record-details column col-xs-12 col-sm-7">
                 <div class="pull-left">
                     <div class="add-edit-delete-group btn-group">
-                        <button id="add-provider" class="btn btn-primary">
+                        <button id="add-provider" class="btn btn-success">
                             <span class="glyphicon glyphicon-plus"></span>
                             <?php echo $this->lang->line('add'); ?>
                         </button>
@@ -244,7 +244,7 @@
                     </div>
 
                     <div class="save-cancel-group btn-group" style="display:none;">
-                        <button id="save-provider" class="btn btn-primary">
+                        <button id="save-provider" class="btn btn-success">
                             <span class="glyphicon glyphicon-ok"></span>
                             <?php echo $this->lang->line('save'); ?>
                         </button>
@@ -363,7 +363,7 @@
 
                 <div class="working-plan-view provider-view" style="display: none;">
                     <h3><?php echo $this->lang->line('working_plan'); ?></h3>
-                    <button id="reset-working-plan" class="btn btn-primary"
+                    <button id="reset-working-plan" class="btn btn-success"
                             title="Reset the working plan back to the default values.">
                         <span class="glyphicon glyphicon-repeat"></span>
                         <?php echo $this->lang->line('reset_plan'); ?></button>
@@ -458,7 +458,7 @@
                     </span>
 
                     <div>
-                        <button type="button" class="add-break btn btn-primary">
+                        <button type="button" class="add-break btn btn-success">
                             <span class="glyphicon glyphicon-plus"></span>
                             <?php echo $this->lang->line('add_break');?>
                         </button>
@@ -511,7 +511,7 @@
             <div class="record-details column col-xs-12 col-sm-7">
                 <div class="btn-toolbar">
                     <div class="add-edit-delete-group btn-group">
-                        <button id="add-secretary" class="btn btn-primary">
+                        <button id="add-secretary" class="btn btn-success">
                             <span class="glyphicon glyphicon-plus"></span>
                             <?php echo $this->lang->line('add');?>
                         </button>
@@ -526,7 +526,7 @@
                     </div>
 
                     <div class="save-cancel-group btn-group" style="display:none;">
-                        <button id="save-secretary" class="btn btn-primary">
+                        <button id="save-secretary" class="btn btn-success">
                             <span class="glyphicon glyphicon-ok"></span>
                             <?php echo $this->lang->line('save');?>
                         </button>

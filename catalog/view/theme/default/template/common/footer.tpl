@@ -21,8 +21,8 @@
                     	
                         <h5>Email us</h5>
                         
-                        <p><a href="#">info@mohtaram.co</a><br />
-<a href="#">appointment@mohtaram.com</a></p>
+                        <p><a href="mailto:info@mohtaram.co">info@mohtaram.co</a><br />
+<a href="mailto:appointment@mohtaram.co">appointment@mohtaram.com</a></p>
                     
                     </div><!--content-->
                     
@@ -34,8 +34,9 @@
                     	
                         <h5>Customer care</h5>
                         
-                        <p><a href="#">Sizing guide</a> <br />
-<a href="#">Give us feedback</a></p>
+                        <p> <a href="<?php echo HTTP_SERVER ?>index.php?route=information/sizeguide">Sizing guide</a> <br />
+							<a href="<?php echo HTTP_SERVER ?>index.php?route=information/contact">Give us feedback</a>
+                            </p>
                     
                     </div><!--content-->
                     
@@ -47,17 +48,26 @@
         <div class="copyrights">
         	
             <ul class="pull-left">
-            	<li><a href="#">Customer Care</a></li>            
-                <li><a href="#">Corporate</a></li>
-                <li><a href="#">Follow us on</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Store Locator</a></li>
-                <li><a href="#">Careers</a></li>
+            	<li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/contact">Customer Care</a></li>            
+                <li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/information&information_id=4">Corporate</a></li>
+                <li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/information&information_id=3">Privacy</a></li>
+                <li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/information&information_id=5">Terms and Condition</a></li>
+                <li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/sitemap">Sitemap</a></li>
+                <li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/career">Careers</a></li>
+                <li><a href="<?php echo HTTP_SERVER ?>appointments" onclick="window.open('<?php echo HTTP_SERVER ?>appointments', 'newwindow', 'width=300, height=250'); return false;">Appointment</a></li>
                 </ul>
+                
+                
             	
                 
                 <div id="gotoTop" class="pull-right"><a href="#" class="animated hvr-bob"><img src="catalog/view/theme/default/img/top-icon.png" alt=""/></a></div>
-                
+                <ul class="pull-right social-networkf social-circlef">
+                        <li><a href="https://www.instagram.com/mohtaramco/" class="icoInstagram" title="Follow us on Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/mohtaramco" class="icoFacebook" title="Follow us on Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/mohtaramco" class="icoTwitter" title="Follow us on Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.pinterest.com/mohtaramco/" class="icoPinterest" title="Follow us on Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                        <!--<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li> -->
+                    </ul>
                 <div class="clear"></div>
         </div><!--copyrights-->
     	

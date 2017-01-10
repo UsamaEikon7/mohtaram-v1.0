@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#35A768">
+    <meta name="theme-color" content="#DEC57F">
     <title><?php echo $this->lang->line('page_title') . ' ' .  $company_name; ?></title>
 
     <?php
@@ -12,7 +12,7 @@
         // INCLUDE CSS FILES
         // ------------------------------------------------------------ ?>
 
-    <link
+    <!--  --><link
         rel="stylesheet"
         type="text/css"
         href="<?php echo base_url('assets/ext/bootstrap/css/bootstrap.min.css'); ?>">
@@ -23,29 +23,18 @@
     <link
         rel="stylesheet"
         type="text/css"
-        href="<?php echo base_url('assets/ext/jquery-qtip/jquery.qtip.min.css'); ?>">
+        href="<?php echo base_url('assets/ext/jquery-qtip/jquery.qtip.min.css'); ?>"> 
     <link
         rel="stylesheet"
         type="text/css"
         href="<?php echo base_url('assets/css/frontend.css'); ?>">
+       
     <link
         rel="stylesheet"
         type="text/css"
         href="<?php echo base_url('assets/css/general.css'); ?>">
 
-    <?php
-        // ------------------------------------------------------------
-        // WEBPAGE FAVICON
-        // ------------------------------------------------------------ ?>
 
-    <link rel="icon" type="image/x-icon"
-            href="<?php echo base_url('assets/img/favicon.ico'); ?>">
-
-    <link rel="icon" sizes="192x192"
-            href="<?php echo base_url('assets/img/logo.png'); ?>">
-</head>
-
-<body>
     <div id="main" class="container">
         <div class="wrapper row">
             <div id="book-appointment-wizard" class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
@@ -56,7 +45,7 @@
                     // ------------------------------------------------------ ?>
 
                 <div id="header">
-                    <span id="company-name"><?php echo $company_name; ?></span>
+                   
 
                     <div id="steps">
                         <div id="step-1" class="book-step active-step" title="<?php echo $this->lang->line('step_one_title'); ?>">
@@ -194,12 +183,12 @@
                                 <select id="select-provider" class="col-md-4 form-control"></select>
                             </div>
 
-                            <div id="service-description" style="display:none;"></div>
+                           <!-- <div id="service-description" style="display:none;"></div> -->
                         </div>
                     </div>
 
                     <div class="command-buttons">
-                        <button type="button" id="button-next-1" class="btn button-next btn-primary"
+                        <button type="button" id="button-next-1" class="btn button-next btn-success"
                                 data-step_index="1">
                             <?php echo $this->lang->line('next'); ?>
                             <span class="glyphicon glyphicon-forward"></span>
@@ -235,7 +224,7 @@
                             <span class="glyphicon glyphicon-backward"></span>
                             <?php echo $this->lang->line('back'); ?>
                         </button>
-                        <button type="button" id="button-next-2" class="btn button-next btn-primary"
+                        <button type="button" id="button-next-2" class="btn button-next btn-success"
                                 data-step_index="2">
                             <?php echo $this->lang->line('next'); ?>
                             <span class="glyphicon glyphicon-forward"></span>
@@ -301,7 +290,7 @@
                                 data-step_index="3"><span class="glyphicon glyphicon-backward"></span>
                             <?php echo $this->lang->line('back'); ?>
                         </button>
-                        <button type="button" id="button-next-3" class="btn button-next btn-primary"
+                        <button type="button" id="button-next-3" class="btn button-next btn-success"
                                 data-step_index="3">
                             <?php echo $this->lang->line('next'); ?>
                             <span class="glyphicon glyphicon-forward"></span>

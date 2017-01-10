@@ -65,7 +65,7 @@
                 <legend>
                     <?php echo $this->lang->line('general_settings'); ?>
                     <?php if ($privileges[PRIV_SYSTEM_SETTINGS]['edit'] == TRUE): ?>
-                    <button type="button" class="save-settings btn btn-primary btn-xs"
+                    <button type="button" class="save-settings btn btn-success btn-xs"
                             title="<?php echo $this->lang->line('save'); ?>">
                         <span class="glyphicon glyphicon-floppy-disk"></span>
                         <?php echo $this->lang->line('save'); ?>
@@ -166,7 +166,7 @@
                 <legend>
                     <?php echo $this->lang->line('business_logic'); ?>
                     <?php if ($privileges[PRIV_SYSTEM_SETTINGS]['edit'] == TRUE): ?>
-                    <button type="button" class="save-settings btn btn-primary btn-xs"
+                    <button type="button" class="save-settings btn btn-success btn-xs"
                             title="<?php echo $this->lang->line('save'); ?>">
                         <span class="glyphicon glyphicon-floppy-disk"></span>
                         <?php echo $this->lang->line('save'); ?>
@@ -296,7 +296,7 @@
                         </span>
 
                         <div>
-                            <button type="button" class="add-break btn btn-primary">
+                            <button type="button" class="add-break btn btn-success">
                                 <span class="glyphicon glyphicon-white glyphicon glyphicon-plus"></span>
                                 <?php echo $this->lang->line('add_break');?>
                             </button>
@@ -336,7 +336,7 @@
                 <legend>
                     <?php echo $this->lang->line('personal_information'); ?>
                     <?php if ($privileges[PRIV_USER_SETTINGS]['edit'] == TRUE): ?>
-                    <button type="button" class="save-settings btn btn-primary btn-xs"
+                    <button type="button" class="save-settings btn btn-success btn-xs"
                             title="<?php echo $this->lang->line('save'); ?>">
                         <span class="glyphicon glyphicon-floppy-disk"></span>
                         <?php echo $this->lang->line('save'); ?>
