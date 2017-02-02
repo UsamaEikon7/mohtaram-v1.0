@@ -1,13 +1,13 @@
 <?php echo $header; ?>
  <section>
-    	
+    	<!--
        <ol class="breadcrumb">
          <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     	<li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
     	<?php } ?>
-        </ol>
+        </ol> -->
 		
-        <section class="about-section">
+        <section class="about-section about-main-page">
     	
         <div class="container">
         	
@@ -19,24 +19,25 @@
                     <div class="spece"></div>
                     <?php echo $description; ?>
 
-                    <a href="<?php echo HTTP_SERVER ?>index.php?route=information/brands" class="readmore-btn hvr-bounce-to-left">VIEW OUR STORY</a>
+                    <a href="<?php echo HTTP_SERVER ?>index.php?route=information/brands" class="readmore-btn hvr-bounce-to-left">OUR STORY</a>
                     
-                    <div class="spece"></div><div class="spece"></div><div class="spece"></div>
+                    <!--<div class="spece"></div><div class="spece"></div><div class="spece"></div>
                     <p>Other pages of interests:<br />
                     <a href="<?php echo HTTP_SERVER ?>index.php?route=information/career">Careers</a><br />
                     <a href="<?php echo HTTP_SERVER ?>index.php?route=information/contact">Help</a><br />
                     <a href="<?php echo HTTP_SERVER ?>index.php?route=information/information&information_id=5">Legal Informations</a>
                     </p>
-                
+                -->
                 </div><!--our story-->
                 
-                <div class="col-md-6 col-sm-6 position pull-right">
-                	
-                	<div class="big-image"><img src="image/catalog/goingglobal1.jpg" alt=""/></div><!--big image-->
+                <div class="col-md-6 col-sm-6 position pull-right home-about-fixes">
+                	<h2> &nbsp;</h2>
+                	<!-- class="big-image" -->
+                    <div ><img src="image/catalog/goingglobal1.jpg" alt="" start="width: 100%;"/></div><!--big image-->
                     
-                    <div class="video-box"><img src="image/catalog/goingglobal2.jpg" alt=""/><a href="#" class="play-icon"><img src="img/play-icon.png" alt=""/></a></div><!--video-box-->
+                  <!--  <div class="video-box"><img src="image/catalog/goingglobal2.jpg" alt=""/><a href="#" class="play-icon"><img src="img/play-icon.png" alt=""/></a></div><!--video-box-->
                     
-                    <div class="small-image"><img src="image/catalog/goingglobal3.jpg" alt=""/></div><!--small image-->
+                    <!--<div class="small-image"><img src="image/catalog/goingglobal3.jpg" alt=""/></div><!--small image-->
 
               </div><!--col md sm 6-->
                 

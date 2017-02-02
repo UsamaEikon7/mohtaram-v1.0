@@ -26241,7 +26241,7 @@ div.team_bio div.view.alex {
 }
 div.team_bio div.view.alex img {
 	left: -29px;
-	top: -20px;
+	/* top: -20px; */
 }
 @media only screen and (max-width: 978px) {
 div.team_bio div.view.alex img {

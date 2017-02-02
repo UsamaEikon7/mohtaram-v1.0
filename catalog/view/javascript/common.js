@@ -54,8 +54,8 @@ $(document).ready(function() {
 	$('#search input[name=\'search\']').parent().find('button').on('click', function() {
 		var url = $('base').attr('href') + 'index.php?route=product/search';
 
-		var value = $('header #search input[name=\'search\']').val();
-
+		var value = $('.header #search input[name=\'search\']').val();
+		//alert(value);
 		if (value) {
 			url += '&search=' + encodeURIComponent(value);
 		}

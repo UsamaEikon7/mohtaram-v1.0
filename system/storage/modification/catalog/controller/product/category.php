@@ -212,7 +212,7 @@ class ControllerProductCategory extends Controller {
 				$product_total = $this->model_catalog_product->getTotalProducts($filter_data);
 	
 				$results = $this->model_catalog_product->getProducts($filter_data);
-	
+				//echo "<pre>"; print_r($results); echo "</pre>";
 				foreach ($results as $result) {
 					if ($result['image']) {
 						$image = $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_product_width'), $this->config->get($this->config->get('config_theme') . '_image_product_height'));
@@ -442,7 +442,7 @@ class ControllerProductCategory extends Controller {
 				$data['content_bottom'] = $this->load->controller('common/content_bottom');
 				$data['footer'] = $this->load->controller('common/footer');
 				$data['header'] = $this->load->controller('common/header');
-	
+				//echo "<pre>"; print_r($data); echo "</pre>";
 				$this->response->setOutput($this->load->view('product/category', $data));
 			} else {
 				/* In case if we have the CATEGORY but no product in it */

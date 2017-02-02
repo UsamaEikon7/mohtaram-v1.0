@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#DEC57F">
     <title><?php echo $this->lang->line('page_title') . ' ' .  $company_name; ?></title>
 
+
     <?php
         // ------------------------------------------------------------
         // INCLUDE CSS FILES
@@ -44,10 +45,14 @@
                     // FRAME TOP BAR
                     // ------------------------------------------------------ ?>
 
+				
+                
                 <div id="header">
-                   
+                <div class="text-center">
+                	<a class="logo" href="<?php echo MainWebsite; ?>"><img src="<?php echo base_url('') ?>assets/img/logo.png" alt="Mohtaram" title="Mohtaram"></a> 
+              	</div>   
 
-                    <div id="steps">
+                    <!--<div id="steps">
                         <div id="step-1" class="book-step active-step" title="<?php echo $this->lang->line('step_one_title'); ?>">
                             <strong>1</strong>
                         </div>
@@ -61,7 +66,8 @@
                         <div id="step-4" class="book-step" title="<?php echo $this->lang->line('step_four_title'); ?>">
                             <strong>4</strong>
                         </div>
-                    </div>
+                    </div> -->
+                    
                 </div>
 
                 <?php
@@ -186,12 +192,26 @@
                            <!-- <div id="service-description" style="display:none;"></div> -->
                         </div>
                     </div>
-
+					 <!-- <div id="steps">
+                        <div id="step-1" class="book-step active-step" title="<?php echo $this->lang->line('step_one_title'); ?>">
+                            <strong>1</strong>
+                        </div>
+                        <div id="step-2" class="book-step" title="<?php echo $this->lang->line('step_two_title'); ?>">
+                            <strong>2</strong>
+                        </div>
+                        <div id="step-3" class="book-step" title="<?php echo $this->lang->line('step_three_title'); ?>">
+                            <strong>3</strong>
+                        </div>
+                        <div id="step-4" class="book-step" title="<?php echo $this->lang->line('step_four_title'); ?>">
+                            <strong>4</strong>
+                        </div>
+                    </div> -->
+                    
                     <div class="command-buttons">
                         <button type="button" id="button-next-1" class="btn button-next btn-success"
                                 data-step_index="1">
                             <?php echo $this->lang->line('next'); ?>
-                            <span class="glyphicon glyphicon-forward"></span>
+                            <!--<span class="glyphicon glyphicon-forward"></span> -->
                         </button>
                     </div>
                 </div>
@@ -221,13 +241,13 @@
                     <div class="command-buttons">
                         <button type="button" id="button-back-2" class="btn button-back btn-default"
                                 data-step_index="2">
-                            <span class="glyphicon glyphicon-backward"></span>
+                            <!--<span class="glyphicon glyphicon-backward"></span>-->
                             <?php echo $this->lang->line('back'); ?>
                         </button>
                         <button type="button" id="button-next-2" class="btn button-next btn-success"
                                 data-step_index="2">
                             <?php echo $this->lang->line('next'); ?>
-                            <span class="glyphicon glyphicon-forward"></span>
+                            <!--<span class="glyphicon glyphicon-forward"></span>-->
                         </button>
                     </div>
                 </div>
@@ -277,7 +297,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="notes" class="control-label"><?php echo $this->lang->line('notes'); ?></label>
-                                    <textarea id="notes" maxlength="500" class="form-control" rows="3"></textarea>
+                                    <input type="text" id="notes" class="form-control" />
                                 </div>
                             </div>
 
@@ -287,13 +307,13 @@
 
                     <div class="command-buttons">
                         <button type="button" id="button-back-3" class="btn button-back btn-default"
-                                data-step_index="3"><span class="glyphicon glyphicon-backward"></span>
+                                data-step_index="3"><!--<span class="glyphicon glyphicon-backward"></span>-->
                             <?php echo $this->lang->line('back'); ?>
                         </button>
                         <button type="button" id="button-next-3" class="btn button-next btn-success"
                                 data-step_index="3">
                             <?php echo $this->lang->line('next'); ?>
-                            <span class="glyphicon glyphicon-forward"></span>
+                            <!--<span class="glyphicon glyphicon-forward"></span>-->
                         </button>
                     </div>
                 </div>
@@ -328,12 +348,12 @@
                     <div class="command-buttons">
                         <button type="button" id="button-back-4" class="btn button-back btn-default"
                                 data-step_index="4">
-                            <span class="glyphicon glyphicon-backward"></span>
+                            <!--<span class="glyphicon glyphicon-backward"></span>-->
                             <?php echo $this->lang->line('back'); ?>
                         </button>
                         <form id="book-appointment-form" style="display:inline-block" method="post">
                             <button id="book-appointment-submit" type="button" class="btn btn-success">
-                                <span class="glyphicon glyphicon-ok"></span>
+                                
                                 <?php
                                     echo (!$manage_mode) ? $this->lang->line('confirm')
                                             : $this->lang->line('update');

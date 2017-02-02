@@ -14,16 +14,16 @@ class ControllerInformationbrands extends Controller {
 
 
 
-		$this->document->setTitle("Brand Story");
-		$this->document->setDescription("Our Brand Story");
-		$this->document->setKeywords("Mohtaram, Brand Story");
+		$this->document->setTitle("Brand Elements");
+		$this->document->setDescription("Our Brand Elements");
+		$this->document->setKeywords("Mohtaram, Brand Elements");
 
 		$data['breadcrumbs'][] = array(
 			'text' => "Brands",
 			'href' => $this->url->link('information/brands')
 		);
 
-		$data['heading_title'] = "Brand Story";
+		$data['heading_title'] = "Brand Elements";
 
 		$data['button_continue'] = $this->language->get('button_continue');
 

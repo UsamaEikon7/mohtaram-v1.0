@@ -1,7 +1,15 @@
 <?php echo $header; ?>
-    <section class="map"></section><!--map-->
+    
+    
+    <section id="maps" class="map">
+					
+			
+							
+		
+	</section>
+    
                 
-    <section class="about-section">
+    <section class="about-section contactpage">
     	
       <div class="container text-center">
         	
@@ -52,7 +60,7 @@ ever since the 1500s, when an unknown printer took a galley.</p>
                 
                 <div class="clear"></div>
                 
-              <div class="spece"></div><div class="spece"></div><div class="spece"></div><div class="spece"></div>
+ 
             
             </div><!--row-->
         
@@ -62,3 +70,33 @@ ever since the 1500s, when an unknown printer took a galley.</p>
     </section><!--bredcrumbs section-->
 
 <?php echo $footer; ?>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyDQddURYGdOEEVHJLwkN4r0A7JDGh0PaDU&sensor=true"></script>
+<script type='text/javascript' src='http://southasiarising.com/assets/js/gmaps.js'></script>
+<script type='text/javascript'>
+		
+			 map = new GMaps({
+					el: '#maps',
+					zoom: 14,
+					 lat: 33.7201038,
+					lng: 73.0715905,
+					zoomControl : true,
+					scrollwheel: false,
+					zoomControlOpt: {
+						style : 'SMALL',
+						position: 'TOP_LEFT'
+					},
+					panControl : false,
+					streetViewControl : false,
+					mapTypeControl: false,
+					overviewMapControl: false
+				  });
+
+			 map.addMarker({
+				   lat: 33.7201038,
+					lng: 73.0715905,
+					title: 'Beverley Centre, Blue Area, Islamabad, Pakistan',
+					icon: "image/catalog/marker.png"
+				  });
+
+			 countdown_init();
+		</script>

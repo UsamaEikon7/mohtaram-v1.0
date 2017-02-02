@@ -31,23 +31,26 @@
 <body>
     <div id="main" class="container">
         <div class="wrapper row">
+        
             <div id="success-frame" class="frame-container
                     col-xs-12
                     col-sm-offset-1 col-sm-10
                     col-md-offset-2 col-md-8
                     col-lg-offset-2 col-lg-8">
+                    
+                <div class="text-center">
+                	<a class="logo" href="#"><img src="<?php echo base_url('') ?>assets/img/logo.png" alt="Mohtaram" title="Mohtaram"></a> 
+              	</div> 
 
-                <div class="col-xs-12 col-sm-2">
-                    <img id="success-icon" class="pull-right" src="<?php echo base_url('assets/img/success.png'); ?>" />
-                </div>
-                <div class="col-xs-12 col-sm-10">
+               
+                <div class="col-xs-12 col-sm-12">
                     <?php
                         echo '
                             <h3>' . $this->lang->line('appointment_registered') . '</h3>
                             <p>' . $this->lang->line('appointment_details_was_sent_to_you') . '</p>
-                            <a href="'.MainWebsite.'" class="btn btn-success btn-large">
-                                <span class="glyphicon glyphicon-calendar"></span> ' .
-                                $this->lang->line('go_to_booking_page') . '
+                            <a href="'.MainWebsite.'" class="btn btn-success btn-large btn-theme">
+                                 Go to Website
+                                
                             </a>
                         ';
 

@@ -54,10 +54,11 @@ class ControllerCommonFileManager extends Controller {
 
 		// Merge directories and files
 		$images = array_merge($directories, $files);
-
+		sort($images);
+		//print_r($images); exit;
 		// Get total number of files and directories
 		$image_total = count($images);
-
+		
 		// Split the array based on current page number and max number of items per page of 10
 		$images = array_splice($images, ($page - 1) * 16, 16);
 

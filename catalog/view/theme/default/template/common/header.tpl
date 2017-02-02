@@ -74,7 +74,7 @@ if(isset($in_specimen)){
 		stickyNav();  
 		  
 		$(window).scroll(function() {  
-			stickyNav();
+			//stickyNav();
 		});  
 		});  
 
@@ -89,14 +89,15 @@ if(isset($in_specimen)){
       <!--col md sm 3-->
       <div class="col-md-6 col-sm-2 col-xs-4 text-center">
         <?php if ($logo) { ?>
-        <a class="navbar-brand logo" href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" alt="<?php echo $name; ?>" title="<?php echo $name; ?>"/></a> <a class="navbar-brand sticky-logo" href="<?php echo $home; ?>"><img src="catalog/view/theme/default/img/sticky-logo.png" alt="<?php echo $name; ?>" title="<?php echo $name; ?>"/></a>
+        <a class="navbar-brand sticky-logo" href="<?php echo $home; ?>"><img src="catalog/view/theme/default/img/sticky-logo.png" alt="<?php echo $name; ?>" title="<?php echo $name; ?>"/></a> <a class="navbar-brand logo" href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" alt="<?php echo $name; ?>" title="<?php echo $name; ?>"/></a>
         <?php }else { ?>
         <a class="navbar-brand logo" href="<?php echo $home; ?>"><img src="catalog/view/theme/default/img/logo.png" alt="<?php echo $name; ?>" title="<?php echo $name; ?>"/></a> <a class="navbar-brand sticky-logo" href="<?php echo $home; ?>"><img src="catalog/view/theme/default/img/sticky-logo.png" alt="<?php echo $name; ?>" title="<?php echo $name; ?>"/></a>
         <?php } ?>
       </div>
-      <div class="col-md-3 col-sm-5 col-xs-8 social-links"> <a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>" id="cart"><span id="cart-total"><?php echo $cart; ?></span><i class="fa fa-shopping-cart"></i> </a> 
+      <div class="col-md-3 col-sm-5 col-xs-8 social-links"> <a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>" id="cart"><span id="cart-total"></span><img src="image/catalog/shopping-cart.png" style="width:12px;" /></i> </a> 
         <!--<a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>">Wishlist <i class="fa fa-heart"></i></a> --> 
-        <a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>">Checkout <i class="fa fa-share"></i> </a> <a href="<?php echo $account; ?>" class=" dropdown dropdown-toggle" data-toggle="dropdown" > Account <i class="fa fa-user"></i></a>
+         <a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"> <i class="fa fa-share"></i> | </a> 
+        <a href="<?php echo $account; ?>" class=" dropdown dropdown-toggle" data-toggle="dropdown" > <img src="image/catalog/user-silhouette.png" style="width:12px;" />  |</a>
         <ul class="dropdown-menu dropdown-menu-right">
           <?php if ($logged) { ?>
           <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
@@ -141,31 +142,28 @@ if(isset($in_specimen)){
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav text-center">
                 <li><a href="<?php echo $base; ?>">Home</a></li>
-                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Mede Proudly in Pakistan</a>
-                  <ul class="dropdown-menu list-unstyled">
-                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Mohtaram Family</a>
-                      <ul class="dropdown-menu list-unstyled">
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Made Proudly in Pakistan</a>
+                 
+                <ul class="dropdown-menu list-unstyled">
                         <li ><a href="<?php echo $base; ?>index.php?route=information/information&information_id=4" >About Us</a> </li>
                         <li ><a href="<?php echo $base; ?>index.php?route=information/team" >Our Team</a> </li>
-                        <li ><a href="<?php echo $base; ?>index.php?route=information/brands" >Our Brand Story</a> </li>
+                        <li ><a href="<?php echo $base; ?>index.php?route=information/brands" >Our Brand Elements</a> </li>
                         <li ><a href="<?php echo $base; ?>index.php?route=information/workshop" >Our Workshop</a> </li>
                       </ul>
-                    </li>
-                  </ul>
+                 
                 </li>
                 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Collection</a>
                   <ul class="dropdown-menu list-unstyled">
-                    <li><a href="<?php echo $base; ?>index.php?route=product/category&path=67">Peshawer Zalmi</a></li>
+                    <li><a href="<?php echo $base; ?>index.php?route=product/category&path=67">Peshawar Zalmi</a></li>
                     <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Clothing</a>
                       <ul class="dropdown-menu list-unstyled">
                         <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=62"  >Suits</a> </li>
                         <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=60"  >Jackets</a> </li>
                         <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=61" >Pants</a> </li>
                         <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=64" >Shalwar Kameez</a> </li>
-                         <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=65" >Sherwani</a> </li>
+                        <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=65" >Sherwani</a> </li>
                         <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=63" >Waistcoat</a> </li>
                         <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=59" >Shirts</a> </li>
-                        
                       </ul>
                     </li>
                     <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Accessories</a>
@@ -176,28 +174,27 @@ if(isset($in_specimen)){
                         <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=72" >Bow Ties</a> </li>
                       </ul>
                     </li>
-                    <li><a href="#">Sale</a></li>
+                    <li><a href="<?php echo $base; ?>index.php?route=product/product/sale">Sale</a></li>
                     <li ><a href="<?php echo $base; ?>index.php?route=product/category"  >All Collection</a> </li>
                   </ul>
                 </li>
                 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Bespoke</a>
                   <ul class="dropdown-menu list-unstyled">
-                    <li><a href="#">Book Your Appointment</a></li>
+                    <li><a href="<?php echo $base; ?>appointments">Book Your Appointment</a></li>
                     <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Partner Brands</a>
                       <ul class="dropdown-menu list-unstyled">
-                        <li ><a href="<?php echo $base; ?>index.php?route=information/partners#partner1" >Peshawer Zalmi</a> </li>
-                        <li ><a href="<?php echo $base; ?>index.php?route=information/partners#partner2" >Zaiena</a> </li>
-                        <li ><a href="<?php echo $base; ?>index.php?route=information/partners#partner3" >Partner 3</a> </li>
-            
+                        <li ><a href="<?php echo $base; ?>index.php?route=information/partners#Guabello" >Guabello</a> </li>
+                        <li ><a href="<?php echo $base; ?>index.php?route=information/partners#Angelico" >Lanificio Angelico </a> </li>
+                        <li ><a href="<?php echo $base; ?>index.php?route=information/partners#Drago" >Drago</a> </li>
+                        <li ><a href="<?php echo $base; ?>index.php?route=information/partners#Dormeuil" >Dormeuil</a> </li>
                         
                       </ul>
                     </li>
-                    
                     <li><a href="<?php echo $base; ?>index.php?route=information/testimonials">Client Diaries</a></li>
                   </ul>
                 </li>
                 <li><a href="<?php echo $base; ?>index.php?route=information/contact">Contact</a></li>
-               
+                
                 <!--  Here we can add other menu links-->
               </ul>
             </div>

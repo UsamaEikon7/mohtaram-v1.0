@@ -18,7 +18,9 @@
                                     <h2 class="animated fadeInDown"><?php echo $banner['title']; ?></h2>
 									<?php echo html_entity_decode($banner['description']); ?>
 									<?php } ?>
-<a href="#" class="collection-btn fadeInUp hvr-fade">EXPLORE COLLECTION</a>
+<?php if ($banner['link']) { ?>                                    
+<a href="<?php echo $banner['link']; ?>" class="collection-btn fadeInUp hvr-fade">EXPLORE COLLECTION</a>
+<?php } ?>
 <div class="clear"></div>
                                    <a href="#product" class="product-btn animated fadeInUpBig"><img src="catalog/view/theme/default/img/Scroll_icon.png" class="" alt=""/></a>
 								</div>

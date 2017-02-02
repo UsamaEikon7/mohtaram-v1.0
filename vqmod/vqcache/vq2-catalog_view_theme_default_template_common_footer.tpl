@@ -1,3 +1,14 @@
+<div class="footer-top">
+<div class="container-fluid">
+        	<div class="col-md-12 col-sm-12 logo-block">
+          
+             <img src="catalog/view/theme/default/img/blocklogo.png" />
+            
+            </div>
+            </div>
+
+</div>
+
 <div class="footer-bg">
     	
         <div class="container-fluid">
@@ -6,7 +17,7 @@
                 	
                     <div class="footer-panel border-right">
                     	
-                        <h5>Come visit us</h5>
+                        <h5>Visit us</h5>
                         
                         <p>Office # 10, 2nd Floor, <br />
 16-A Royal Inn Plaza, F-8 Markaz</p>
@@ -34,8 +45,8 @@
                     	
                         <h5>Customer care</h5>
                         
-                        <p> <a href="<?php echo HTTP_SERVER ?>index.php?route=information/sizeguide">Sizing guide</a> <br />
-							<a href="<?php echo HTTP_SERVER ?>index.php?route=information/contact">Give us feedback</a>
+                        <p> <a href="<?php echo HTTP_SERVER ?>index.php?route=information/sizeguide">Size Guide</a> <br />
+							<a href="<?php echo HTTP_SERVER ?>index.php?route=information/contact">Feedback</a>
                             </p>
                     
                     </div><!--content-->
@@ -53,8 +64,7 @@
                 <li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/information&information_id=3">Privacy</a></li>
                 <li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/information&information_id=5">Terms and Condition</a></li>
                 <li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/sitemap">Sitemap</a></li>
-                <li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/career">Careers</a></li>
-                <li><a href="<?php echo HTTP_SERVER ?>appointments" onclick="window.open('<?php echo HTTP_SERVER ?>appointments', 'newwindow', 'width=300, height=250'); return false;">Appointment</a></li>
+                <!--<li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/career">Careers</a></li> -->
                 </ul>
                 
                 

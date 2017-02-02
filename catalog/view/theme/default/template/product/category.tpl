@@ -10,15 +10,16 @@
         <div class="spece"></div>
 
  <div class="row leftrightmargin">
-<?php echo $column_left; ?>
+
+        	
+
+      <?php if ($products) {
+		  echo $column_left; ?>
 		
     
 
 <div class="col-sm-10">
-        	
-
-      <?php if ($products) {
-		 // echo "<pre>"; print_r($products); exit; ?>
+		 <?php // echo "<pre>"; print_r($products); exit; ?>
       <div class="row">
       
         <div class="col-md-4 col-xs-6"  id="content">
@@ -87,9 +88,17 @@
         <div class="col-sm-6 text-left"><?php echo $pagination; ?></div>
         <div class="col-sm-6 text-right"><?php echo $results; ?></div>
       </div>
+      </div>
       
-      
-<?php } ?>
+<?php }else { ?>
+<div class="row">
+<div class="col-sm-12 col-md-12 col-lg-12 text-center">
+<p>
+Coming Soon
+</p>
+</div>	
+
+<?php	} ?>
 </div>
       <?php echo $content_bottom; ?></div>
     <?php echo $column_right; ?></div>

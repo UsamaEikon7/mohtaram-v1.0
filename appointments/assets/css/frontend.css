@@ -8,22 +8,30 @@
  * @link        http://easyappointments.org
  * @since       v1.0.0
  * ---------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
 
-
-
-body, html {
-	font-family:'Muli';
-	background:url('../img/logo.png')
+html, body {
+	background-image:url('../img/2.png');
+	background-size: 57%;
+background-repeat: no-repeat;
+background-origin: content-box;
+background-position: center right;
 	}
+body{ 
+	font-family: 'Muli' !important;
+}
+
+
 #main {
     display: table;
     vertical-align: middle;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	color:#fff;
+	font-family: 'Cinzel-Regular' !important;
+	
 	}
 .text-primary {
-	color:#fff;
+	color:#444444;
 	}	
 
 #main .wrapper {
@@ -37,14 +45,14 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
  ------------------------------------------------------------------------------ */
 
 #book-appointment-wizard {
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 1px 1px #B6B6B6;
+    /*background-color: rgba(0, 0, 0, 0.5); */
+   /* box-shadow: 0px 1px 1px #B6B6B6; */
     min-height: 480px;
     padding: 0;
-	color: #fff;
+	color: #000;
 }
 .form-control {
-	color:#fff;
+	color:#000;
 	}
 
 #book-appointment-wizard #header {
@@ -75,14 +83,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 #book-appointment-wizard .wizard-frame .frame-container {
-    height: 440px;
+    height: auto;
     margin-bottom: 10px;
 }
 
 #book-appointment-wizard .frame-container .frame-title {
-    text-align: center;
-    margin-bottom: 28px;
-    color: #fff;
+   font-size: 30px;
+color: #dec57f;
+margin: 45px 0 20px 0;
+font-family: 'Cinzel-Regular' !important;
+letter-spacing: 1px;
+position: relative;
+font-weight: 500;
+line-height: 1.1;
+text-align:center;
+
 }
 
 #book-appointment-wizard .frame-container .frame-content {
@@ -214,10 +229,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
    ------------------------------------------------------------------------- */
 #message-frame,
 #success-frame {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 1px solid #DDDADA;
+    /*background-color: rgba(0, 0, 0, 0.5); */
+    /*border: 1px solid #DDDADA; */
     padding: 70px;
-	color:#fff;
+	
 	
 }
 
@@ -427,3 +442,60 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         height: 100%;
     }
 }
+.logo img {
+	width:17%;
+	}
+#book-appointment-wizard .wizard-frame .command-buttons .btn{ 
+background:#2b2b2b; padding: 5px 30px; font-size:14px; color:#FFF; display:inline-block; text-transform:uppercase; font-family: 'Cinzel-Regular' !important; margin:40px 0 0 0;
+border-radius: 0px;}
+#book-appointment-wizard .wizard-frame .command-buttons .btn:hover{ color:#2b2b2b; background-color:#DEC57F;}
+#book-appointment-wizard .text-center {
+	text-align: center;
+border-bottom: 1px groove;
+padding-bottom:30px;
+}
+#book-appointment-wizard .wizard-frame {
+	padding-top:95px;
+	}
+#book-appointment-wizard .wizard-frame h3 {
+	text-transform:uppercase;
+	}		
+.bs-wizard {margin-top: 40px;
+}
+
+.btn-theme {
+	background: #2b2b2b;
+padding: 10px 20px;
+font-size: 14px;
+color: #FFF;
+display: inline-block;
+text-transform: uppercase;
+font-family: 'Cinzel-Regular' !important;
+margin: 40px 0 0 0;
+border-radius:0px;
+}
+.btn-theme:hover{ color:#2b2b2b; background-color:#DEC57F;}
+body .ui-datepicker .ui-widget-header, body .ui-datepicker th {
+	background: #444444 !important;
+	}
+body .ui-widget.ui-widget-content {
+    border: 1px solid #444444 !important;
+    
+}	
+
+.command-buttons{
+	width: 100%;
+text-align: center;
+}
+#book-appointment-wizard .wizard-frame {
+    margin-bottom: 100px;
+}
+#success-frame {
+	text-align:center;
+	}
+#wizard-frame-3 .command-buttons {
+	padding-bottom:100px;
+	}
+textarea:focus, textarea.form-control:focus, input.form-control:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, .form-control[type="text"]:focus, .form-control[type="password"]:focus, .form-control[type="email"]:focus, .form-control[type="tel"]:focus, .form-control[contenteditable]:focus {
+  box-shadow: 0 -2px 0 #DEC57F inset;
+}		
