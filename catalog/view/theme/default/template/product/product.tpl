@@ -56,7 +56,7 @@ $current_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                   
                     <?php if (!$special) { ?>
                     
-                      <h3>Price : <?php echo $price; ?></h3>
+                      <h3>Price: <?php echo $price; ?></h3>
                     
                     <?php } else { ?>
                     	<p class="code-stock"><?php echo $special; ?></p>
@@ -78,7 +78,7 @@ $current_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                 
                 
                 <?php
-				echo $description; ?>
+				//echo $description; ?>
                 <!--<p>O uniune perfectă între stilul contemporan şi eleganţa pieselor 
 clasice. Parka în stil sahariană din colecţia exclusivă Personal 
 Tailoring. Confecţionată din ţesătură italiană din serj de in şi 
@@ -117,7 +117,7 @@ bumbac, vopsită pe articolul de îmbrăcăminte.</p> -->
             <?php } ?>
             <?php if ($review_status) { ?>
             <div class="tab-pane" id="tab-review">
-              <form class="form-horizontal" id="form-review">
+              <form class="form-horizontal review-form" id="form-review">
                 <div id="review"></div>
                 <h2><?php echo $text_write; ?></h2>
                 <?php if ($review_guest) { ?>
@@ -134,7 +134,7 @@ bumbac, vopsită pe articolul de îmbrăcăminte.</p> -->
                     
                   </div>
                 </div>
-                <div class="form-group required">
+                <div class="form-group required rating">
                   <div class="col-sm-12">
                     <label class="control-label"><?php echo $entry_rating; ?></label>
                     &nbsp;&nbsp;&nbsp; <?php echo $entry_bad; ?>&nbsp;
@@ -151,7 +151,7 @@ bumbac, vopsită pe articolul de îmbrăcăminte.</p> -->
                 </div>
                 <?php echo $captcha; ?>
                 <div class="buttons clearfix">
-                  <div class="pull-right">
+                  <div class="pull-left">
                     <button type="button" id="button-review" data-loading-text="<?php echo $text_loading; ?>" class="btn send-btn"><?php echo $button_continue; ?></button>
                   </div>
                 </div>

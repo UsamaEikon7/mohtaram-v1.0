@@ -18,8 +18,9 @@
                 	<h2><?php echo $heading_title; ?></h2>
                     <div class="spece"></div>
                     <?php echo $description; ?>
-
-                    <a href="<?php echo HTTP_SERVER ?>index.php?route=information/brands" class="readmore-btn hvr-bounce-to-left">OUR STORY</a>
+					<div class="spece"></div>
+                    <div class="spece"></div>
+                    <a href="<?php echo HTTP_SERVER ?>index.php?route=information/brandstory" class="readmore-btn hvr-bounce-to-left">OUR STORY</a>
                     
                     <!--<div class="spece"></div><div class="spece"></div><div class="spece"></div>
                     <p>Other pages of interests:<br />
@@ -31,9 +32,10 @@
                 </div><!--our story-->
                 
                 <div class="col-md-6 col-sm-6 position pull-right home-about-fixes">
-                	<h2> &nbsp;</h2>
+                	<h2>&nbsp; </h2>
                 	<!-- class="big-image" -->
-                    <div ><img src="image/catalog/goingglobal1.jpg" alt="" start="width: 100%;"/></div><!--big image-->
+                    <div ><img src="image/catalog/goingglobal1.png" alt="" style="float: right;
+width: 72%;"/></div><!--big image-->
                     
                   <!--  <div class="video-box"><img src="image/catalog/goingglobal2.jpg" alt=""/><a href="#" class="play-icon"><img src="img/play-icon.png" alt=""/></a></div><!--video-box-->
                     

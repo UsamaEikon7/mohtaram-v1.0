@@ -798,7 +798,7 @@ class ControllerApiOrder extends Controller {
 			$OrderData['order_id']	=	$this->request->get['order_id'];
 			//$output		=	$this->
 			$output = $this->load->controller('extension/module/tcs', $OrderData);
-			if($outout['error'] == 1){
+			if($output['error'] == 1){
 				echo $output['message']; exit;
 				}
 			}

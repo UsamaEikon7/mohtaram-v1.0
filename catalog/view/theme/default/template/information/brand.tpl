@@ -19,7 +19,7 @@
               <h2 style="text-align: center;" data-fontsize="26" data-lineheight="44">MARKHOR</h2>
               <div class="fusion-sep-clear"></div>
               <div class="fusion-separator sep-single" style="border-color:#999999"></div>
-              <p style="text-align: center;">The Markhor is found at the upper region of the Mohtaram emblem. With its corkscrew-like horns and long graceful hair, the Markhor is the undisputed king of the Mountain. Its name literally means “snake-eater” having the ability to hunt and eat even the most poisonous snakes with ease. The Markhor signifies endurance and strength, which are the rudimentary building blocks of any Mohtaram ensemble..</p>
+              <p style="text-align: center;">The Markhor is found at the upper region of the Mohtaram emblem. With its corkscrew-like horns and long graceful hair, the Markhor is the undisputed king of the Mountain. Its name literally means “snake-eater” - having the ability to hunt and eat even the most poisonous snakes with ease. The Markhor signifies endurance and strength, which are the rudimentary building blocks of any Mohtaram ensemble.</p>
               <div class="fusion-clearfix"></div>
             </div>
           </div>

@@ -27,8 +27,6 @@ class ControllerExtensionModuleTcs extends Controller {
 					}
 				}	
 			
-			
-			
 			$dataArray		=	array (
 				'userName'			=>	$tcssetting['userName'],
 				'password'			=>	$tcssetting['password'],
@@ -47,10 +45,15 @@ class ControllerExtensionModuleTcs extends Controller {
 				'codAmount'			=>	$order_info['total'],
 				'productDetails'	=>	$orderdesc,
 				'custRefNo'			=>	'RG01205',
-				'remarks'			=>	$order_info['comment']
+				'remarks'			=>	$order_info['comment'],
+				'weight'			=>	0.5
+				
+				
 				);
 			//print_r($dataArray); exit;
 			$response		=	$this->SendTcsSoapRequest('InsertData',$dataArray);
+			print_r($response); exit;
+				
 			if($response['status'] == 0){
 				// there was an error
 				$notice['error']	=	1;
@@ -70,7 +73,6 @@ class ControllerExtensionModuleTcs extends Controller {
 					'status'	=>	1
 					);
 				$this->model_extension_shipping_tcs->AddShipmentData($tcsdataArray);
-				print_r($tcsdataArray); exit;
 					
 				$notice['error']	=	0;
 				$notice['message']	=	$tcsdataArray;
@@ -232,7 +234,7 @@ class ControllerExtensionModuleTcs extends Controller {
 	
 	private function SendTcsSoapRequest($method,$dataArray = 0){
 		// Tcs  web services url
-		$url	=	"http://202.61.51.93:6265/Service1.asmx?WSDL";
+		$url	=	"http://webapp.tcscourier.com/codapi/Service1.asmx?WSDL";
 		$client = 	new SoapClient($url);
 		$client->__getTypes();      
 		$client->__getFunctions();

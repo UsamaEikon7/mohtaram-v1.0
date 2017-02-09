@@ -21,12 +21,12 @@
                 <div class="col-md-6 col-sm-12 text-center">
                 
                 	<div class="our-story home-about-fixes">
-									<h2 class="animated fadeInDown">THE PAKISTANI DREAM</h2>
+									<h2 class="animated fadeInDown">ART OF TAILORING</h2>
 									<p class="animated fadeInUpBig" data-caption-delay="200">Mohtaram is a complete way of life, an embodiment of the Pakistani Dream. It is the product of centuries of heritage, of culture, of memories. The grandeur of civilizations past, the poise of a whirling dervish, the markhor’s journey through the mountains, the soothing dance of jasmine flowers in the breeze, the echo of a tabla’s beat, the shahsawar’s pounding heart as he charges forward: these elements inspire every single stitch to deliver not just a suit, but a legacy that’s guided by tradition and inspired by tomorrow.
 <!-- <span><img src="image/catalog/story-sep.jpg" alt=""/></span> -->
 </p>
 
-<a href="<?php echo HTTP_SERVER ?>index.php?route=information/brands" class="collection-btn fadeInUp hvr-fade">OUR STORY</a>
+<a href="<?php echo HTTP_SERVER ?>index.php?route=information/brandstory" class="collection-btn fadeInUp hvr-fade">OUR STORY</a>
                                    
 								</div>
                 

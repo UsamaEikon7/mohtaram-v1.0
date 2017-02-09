@@ -281,7 +281,11 @@ var SEMICOLON = SEMICOLON || {};
 			if( !elementScrollEasing ) { elementScrollEasing = 'easeOutQuad'; }
 
 			$goToTopEl.click(function() {
-				return false;
+				$("html, body").animate({
+            scrollTop: 0
+        }, 600);
+          return false; 	  	 	
+			
 			});
 		},
 

@@ -30,7 +30,14 @@
                 <div class="col-md-4 col-sm-4 margin-bottom-top">
                 <article class="archive-article">
                 	<a href="<?php echo $category['href']; ?>">
-                    <div class="featured-image"> <img alt="<?php echo $category['description']; ?>" class="thumbnail-medium" src="<?php echo M_IMAGE.$category['image']; ?>"> </div>
+                    <div class="featured-image"> 
+                    <?php if($category['image'] != '') { ?>
+                    <img alt="<?php echo $category['description']; ?>" class="thumbnail-medium" src="<?php echo M_IMAGE.$category['image']; ?>"> <?php }else{ ?>
+                    <div class="comingsoon"> 
+					<?php echo "Coming Soon"; ?>
+                    </div> <?php } ?>
+                     
+                     </div>
                     <div class="overlay">
                       <div class="overlay-content">
                         <h2><?php echo $category['name']; ?></h2>

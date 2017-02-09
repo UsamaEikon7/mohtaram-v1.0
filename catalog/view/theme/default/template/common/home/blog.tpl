@@ -73,7 +73,9 @@ background-size: cover;"></div><!--about bg-->
     <?php if(!empty($banner4)){
 		foreach ($banner4  as $banner) { ?> 
               <!-- <a href="<?php echo $banner['link'];  ?>" title="<?php echo html_entity_decode($banner['title']);  ?>"> -->
-               <div class="frame-life-bg" style="background: url(<?php echo M_IMAGE.$banner['image']; ?>); background-position: center center;">
+               <div class="frame-life-bg" style="background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),url(<?php echo M_IMAGE.$banner['image']; ?>); background-position: center center;">
                	
                 	<h2><?php echo html_entity_decode($banner['title']);  ?></h2>
                     <a href="<?php echo $banner['link'];  ?>" class="readmore-btn hvr-fade">Read more</a> 

@@ -24,9 +24,7 @@ and we’ll be happy to get in touch with you. </h2>
                         
 						<div class="col-md-8 col-sm-12 col-md-offset-2">
                         	
-                            <p>We’ll take care of the sizing. You choose from more than 20 fabrics
-industry. Lorem Ipsum has been the industry's standard dummy text 
-ever since the 1500s, when an unknown printer took a galley.</p>
+                            <p>We are here to help you look your best everyday. Start your Mohtaram journey today, contact us by filling out this form.</p>
 
 <div class="spece"></div><div class="spece"></div>
 
