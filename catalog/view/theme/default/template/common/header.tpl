@@ -155,7 +155,7 @@ if(isset($in_specimen)){
                 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Collection</a>
                   <ul class="dropdown-menu list-unstyled">
                     <li><a href="<?php echo $base; ?>index.php?route=product/category&path=67">Peshawar Zalmi</a></li>
-                   <!-- <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Clothing</a>
+                    <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Clothing</a>
                       <ul class="dropdown-menu list-unstyled">
                         <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=62"  >Suits</a> </li>
                         <li ><a href="<?php echo $base; ?>index.php?route=product/category&path=60"  >Jackets</a> </li>
@@ -175,7 +175,7 @@ if(isset($in_specimen)){
                       </ul>
                     </li>
                     <li><a href="<?php echo $base; ?>index.php?route=product/product/sale">Sale</a></li>
-                    <li ><a href="<?php echo $base; ?>index.php?route=product/category"  >All Collection</a> </li>-->
+                    <li ><a href="<?php echo $base; ?>index.php?route=product/category"  >All Collection</a> </li>
                   </ul>
                 </li>
                 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Bespoke</a>

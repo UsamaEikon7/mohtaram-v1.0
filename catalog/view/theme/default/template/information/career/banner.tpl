@@ -8,7 +8,7 @@ background-size: cover !important;
 <div class="slider-caption slider-caption-center animated fadeInUpBig">
 									
                                     <h2 class="animated fadeInDown">We Love What We Do</h2>
-									<p>Apply today to be a part of Team Mohtaram and take your seat at the gentlemen’s desk. </p>
+									<!--<p>Apply today to be a part of Team Mohtaram and take your seat at the gentlemen’s desk. </p> -->
 									
 <!-- <a href="#" class="collection-btn fadeInUp hvr-fade">OUR TEAM</a> -->
 <div class="clear"></div>
@@ -65,9 +65,7 @@ background-size: cover !important;
         <h2>Opened positions</h2>
         <div class="spece"></div>
         <div class="spece"></div>
-        <p>We’ll take care of the sizing. You choose from more than 20 fabrics
-          industry. Lorem Ipsum has been the industry's standard dummy text 
-          ever since the 1500s, when an unknown printer took a galley.</p>
+        <p>Apply today to be a part of Team Mohtaram and take your seat at the gentlemen’s desk.</p>
       </div>
       <!--our story-->
       

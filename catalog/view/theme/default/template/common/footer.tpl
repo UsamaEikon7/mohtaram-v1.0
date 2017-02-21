@@ -59,12 +59,15 @@ Islamabad, Pakistan</p>
         <div class="copyrights">
         	
             <ul class="pull-left">
-            	<li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/contact">Customer Care</a></li>            
-                <!--<li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/information&information_id=4">Corporate</a></li> -->
-                <li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/information&information_id=3">Privacy</a></li>
-                <!--<li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/information&information_id=5">Terms and Condition</a></li> -->
+            	<li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/contact">Customer Care</a></li> 
                 <li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/sitemap">Sitemap</a></li>
-                <!--<li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/career">Careers</a></li> -->
+                <li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/career">Careers</a></li>                      
+                <li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/information&information_id=3">Privacy Policy</a></li>
+                <li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/information&information_id=5">Terms and Condition</a></li>
+                <li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/information&information_id=7">Shipping & Handling</a></li>
+                <li><a href="<?php echo HTTP_SERVER ?>index.php?route=information/information&information_id=8">Returns & Exchanges</a></li>
+               
+                
                 </ul>
                 
                 

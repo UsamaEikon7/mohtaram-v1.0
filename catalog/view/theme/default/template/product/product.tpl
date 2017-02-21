@@ -29,7 +29,7 @@ $current_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                 <div class="social-header" id="content">
                 	<?php foreach($breadcrumbs as $key => $item) {
 						if($key == 1) { ?>
-                    <a href="<?php echo $item['href']; ?>" class="back-link pull-left"> &lt; Back to Category Name</a>
+                    <a href="<?php echo $item['href']; ?>" class="back-link pull-left"> &lt; Back to <?php echo $item['text']; ?> </a>
                     <?php } 
 					}?>
                     <div class="social pull-right addthis_toolbox addthis_default_style addthis_32x32_style" data-url="<?php echo $share; ?>">
@@ -191,8 +191,11 @@ bumbac, vopsită pe articolul de îmbrăcăminte.</p> -->
                   </label>
           
           <?php }
-		  if(strtolower($option['name']) == 'sizes') { ?>
-          <a href="#" style="color:#2b2b2c; padding-left:20px; text-decoration:underline; font-weight:bold;">Size guide</a>
+		 print_r($category_info);
+		  if(strtolower($option['name']) == 'sizes') {
+			  
+			   ?>
+          <a href="<?php echo HTTP_SERVER ?>index.php?route=information/sizeguide" style="color:#2b2b2c; padding-left:20px; text-decoration:underline; font-weight:bold;">Size guide</a>
           <?php } ?>
           </div><!--Color Widget -->
           </div><!--color -->

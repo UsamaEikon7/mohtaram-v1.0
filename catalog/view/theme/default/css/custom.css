@@ -1583,4 +1583,13 @@ line-height: 367px;
 	}
 .product_detail_p .product-detail .tab-content {
 	padding-bottom:20px;
-	}					 									 		
+	}
+.informationmain p {
+	text-align:justify;
+	}
+.informationmain ul {
+	 font-size: 17px;
+line-height: 36px;
+color: #2b2b2c;
+text-align: justify;
+}							 									 		

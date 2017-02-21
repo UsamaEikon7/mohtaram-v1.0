@@ -8,6 +8,7 @@ class ModelCatalogCareer extends Model {
 
 	public function getJobs($data) {
 		$sql = "SELECT * FROM " . DB_PREFIX . "career c LEFT JOIN " . DB_PREFIX . "career_description cd ON (c.career_id = cd.career_id) LEFT JOIN " . DB_PREFIX . "career_to_store c2s ON (c.career_id = c2s.career_id) WHERE cd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND c2s.store_id = '" . (int)$this->config->get('config_store_id') . "' AND c.status = '1' ORDER BY c.date_added  DESC LIMIT " . (int)$data['start'] . "," . (int)$data['limit'];
+		//echo $sql; exit;
 		$query = $this->db->query($sql);		
 		return $query->rows;	
 	}
