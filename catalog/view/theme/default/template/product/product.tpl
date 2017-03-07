@@ -191,7 +191,7 @@ bumbac, vopsită pe articolul de îmbrăcăminte.</p> -->
                   </label>
           
           <?php }
-		 print_r($category_info);
+		 //print_r($category_info);
 		  if(strtolower($option['name']) == 'sizes') {
 			  
 			   ?>

@@ -28,7 +28,7 @@ width: 14%;">View Brand Story</a>
       </div>
 
 
-<div class="row"> 
+<!--<div class="row"> 
       <div class="team_bio group right  divider">
         
           <div class="view steve" rel="gallery">
@@ -43,9 +43,9 @@ width: 14%;">View Brand Story</a>
           <div class="social_icons">
           </div>
         </div>
-      </div><!--/team_bio-->
+      </div>--><!--/team_bio-->
       <div class="row"> 
-      <div class="team_bio group">
+      <div class="team_bio group right  divider">
        
           <div class="view alex" rel="gallery">
             <img src="<?php echo M_IMAGE ?>/team/vaneeza.jpg" alt="VANEEZA NADEEM">
@@ -60,7 +60,7 @@ width: 14%;">View Brand Story</a>
         </div>
       </div><!--/team_bio-->
       <div class="row"> 
-      <div class="team_bio group right  divider">
+      <div class="team_bio group">
           <div class="view oli" rel="gallery">
             <img src="<?php echo M_IMAGE ?>/team/waqar.jpg" alt="WAQAR ASGHAR">
             </div>
@@ -74,7 +74,7 @@ width: 14%;">View Brand Story</a>
         </div>
       </div><!--/team_bio-->
       <div class="row"> 
-      <div class="team_bio group">
+      <div class="team_bio group right divider">
           <div class="view tom" rel="gallery">
             <img src="<?php echo M_IMAGE ?>/team/asfendyar.jpg" alt="ASFENDYAR KHAN">
             </div>

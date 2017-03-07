@@ -12,6 +12,9 @@
     <?php } else { ?>
     <input type="radio" name="payment_method" value="<?php echo $payment_method['code']; ?>" />
     <?php } ?>
+    <?php if(file_exists(HTTP_SERVER.'images/icons/'.$code.'.png')) { ?>
+    <img src="<?php echo HTTP_SERVER.'images/icons/'.$code.'.png'; ?>" />
+    <?php } ?>
     <?php echo $payment_method['title']; ?>
     <?php if ($payment_method['terms']) { ?>
     (<?php echo $payment_method['terms']; ?>)

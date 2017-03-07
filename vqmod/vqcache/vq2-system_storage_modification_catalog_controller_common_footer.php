@@ -24,6 +24,10 @@ class ControllerCommonFooter extends Controller {
             $data['blog'] = $this->url->link('blog/category'); 
             
 
+            $data['text_blog'] = $this->language->get('text_blog'); 
+            $data['blog'] = $this->url->link('blog/category'); 
+            
+
 		$this->load->model('catalog/information');
 
 		$data['informations'] = array();
