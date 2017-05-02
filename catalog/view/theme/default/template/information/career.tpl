@@ -4,14 +4,9 @@
     <?php
 	echo $banner;
 	 ?><!--slider-->
-                  
-
-      
-
     
     <!--  jobs stuff start here -->
-    <section class="about-section">
-    	
+    <section class="about-section story">  	
         <div class="container">
         	
             <div class="row">

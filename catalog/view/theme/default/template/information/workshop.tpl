@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-5 col-sm-6 pull-left">
-        <h2>Our Workshop</h2>
+        <h2>The Mohtaram Atelier</h2>
         <div class="spece"></div>
         <p> At Mohtaram, we greatly prize the concept of the ‘Pakistani dream’. By each glimmer of hope in a gentleman’s eyes, by every story that highlights folklore, every sliver of memory and tradition that perfectly combines to form the man that is Mohtaram. Our designs are characterized by a kaleidoscopic mix of history, culture and experience, woven together and dusted with heritage, with stories, and with a legacy. The man who adorns them, carries with him always the weight of centuries of memories and hope. Mohtaram is a complete lifestyle, a method of being, and a state of mind that looks forward to the future, by always remembering the past.</p>
       </div>

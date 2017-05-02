@@ -1,12 +1,12 @@
-<section class="about-section">
+<section class="about-section aboutvideo" id="aboutvideo">
     	
         <div class="container">
         	
             <div class="row">
             	
             	<div class="col-md-6 col-sm-12 position">
-                	<div class="fluid-width-video-wrapper our-story home-about-fixes">
-                    <iframe name="ifr" src='https://player.vimeo.com/video/169996358?api=1&player_id=vimeoplayer&title=0&amp;byline=0&amp;portrait=0' width="540px" height="360px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="nofocusvideo"></iframe>
+                	<div class="fluid-width-video-wrapper our-story home-about-fixes js-video">
+                    <iframe name="ifr" src='https://player.vimeo.com/video/169996358' width="540px" height="360px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="nofocusvideo"></iframe>
                     </div>
                     <!--
                 	<div class="big-image"><img src="image/catalog/goingglobal1.jpg" alt=""/></div>

@@ -1,5 +1,5 @@
 <?php echo $header; ?>
-    <section>
+    <section class="main_top">
        <ol class="breadcrumb">
          <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     	<li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>

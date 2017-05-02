@@ -7,7 +7,7 @@
     	<?php } ?>
         </ol>
 		
-        <section class="about-section padding0 informationmain">
+        <section class="about-section padding0 informationmain main_top">
     	
         <div class="container">
         	

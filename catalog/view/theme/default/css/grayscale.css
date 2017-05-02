@@ -207,19 +207,28 @@ html {
 }
 
 .btn-default {
-    border: 1px solid #28c3ab;
-    color: #28c3ab;
+    border: 1px solid #2b2b2b;
+    color: #2b2b2b;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #28c3ab;
+    border: 1px solid #2b2b2b;
     outline: 0;
-    color: #000;
-    background-color: #28c3ab;
+    color: #fff;
+    background-color: #2b2b2b;
 }
-
+.btn-danger {
+    color: #fff;
+    background-color: #2b2b2b;
+    border-color: #2b2b2b;
+}
+.btn-danger :hover,.btn-danger :focus{
+    color: #fff;
+    background-color: #2b2b2b !important;
+    border-color: #2b2b2b;
+}
 .btn-huge {
     padding: 25px;
     font-size: 26px;

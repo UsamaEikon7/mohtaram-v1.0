@@ -1,5 +1,5 @@
 <?php echo $header; ?>
-<section class="about-section nopadding">
+<section class="nopadding main_top">
 
   <ol class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>

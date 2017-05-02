@@ -8,7 +8,7 @@ $i = 1; ?>
     	<?php } ?>
         </ol>
         
-<section class="about-section nopadding">
+<section class="about-section">
     	
         <div class="container">
         	

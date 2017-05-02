@@ -48,6 +48,7 @@ class ControllerCommonHome extends Controller {
 		$data['blog']			=	 $this->load->view('common/home/blog', $blogdata);
 		$data['campaign']		=	 $this->load->view('common/home/campaign', $campaign);
 		$data['about']			=	 $this->load->view('common/home/about', $data);
+		$data['popup']			=	 $this->load->view('common/home/popup', $data);
 		//print_r($data['footer']); exit;
 		$this->response->setOutput($this->load->view('common/home', $data));
 	}

@@ -69,7 +69,7 @@ and we’ll be happy to get in touch with you. </h2>
 
 <?php echo $footer; ?>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyDQddURYGdOEEVHJLwkN4r0A7JDGh0PaDU&sensor=true"></script>
-<script type='text/javascript' src='http://southasiarising.com/assets/js/gmaps.js'></script>
+<script type='text/javascript' src='catalog/view/theme/default/js/gmaps.js'></script>
 <script type='text/javascript'>
 		
 			 map = new GMaps({

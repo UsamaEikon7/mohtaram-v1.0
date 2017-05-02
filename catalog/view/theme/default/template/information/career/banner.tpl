@@ -21,7 +21,7 @@ background-size: cover !important;
 		</section>
 <!--slider-->
 
-<section class="about-section">
+<section class="about-section story">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-sm-6 pull-left">

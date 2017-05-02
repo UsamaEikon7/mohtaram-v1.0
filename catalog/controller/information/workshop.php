@@ -14,16 +14,16 @@ class ControllerInformationworkshop extends Controller {
 
 
 
-		$this->document->setTitle("Our Workshop");
-		$this->document->setDescription("Our Workshop");
+		$this->document->setTitle("The Mohtaram Atelier");
+		$this->document->setDescription("The Mohtaram Atelier");
 		$this->document->setKeywords("Mohtaram, workshop");
 
 		$data['breadcrumbs'][] = array(
-			'text' => "Our Workshop",
+			'text' => "The Mohtaram Atelier",
 			'href' => $this->url->link('information/workshop')
 		);
 
-		$data['heading_title'] = "Our Workshop";
+		$data['heading_title'] = "The Mohtaram Atelier";
 
 		$data['button_continue'] = $this->language->get('button_continue');
 

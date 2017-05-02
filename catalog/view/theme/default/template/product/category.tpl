@@ -22,7 +22,7 @@
 		 <?php // echo "<pre>"; print_r($products); exit; ?>
       <div class="row">
       
-        <div class="col-md-4 col-xs-6"  id="content">
+        <div class="col-md-4 col-sm-6 col-xs-12"  id="content">
           <div class="form-group input-group input-group-sm">
             <label class="input-group-addon" for="input-sort"><?php echo $text_sort; ?></label>
             <select id="input-sort" class="form-control" onchange="location = this.value;">
@@ -36,7 +36,7 @@
             </select>
           </div>
         </div>
-        <div class="col-md-3 col-xs-6">
+        <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="form-group input-group input-group-sm">
             <label class="input-group-addon" for="input-limit"><?php echo $text_limit; ?></label>
             <select id="input-limit" class="form-control" onchange="location = this.value;">
@@ -54,10 +54,10 @@
       <div class="row">
    
                 <?php foreach ($products as $product) { ?>
-                <div class="col-md-4 col-sm-4 margin-bottom-top">
+                <div class="col-md-4 col-sm-4 col-xs-6 col-lg-4 margin-bottom-top">
                 <article class="archive-article">
                 	
-                    <div class="featured-image"> <a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="thumbnail-medium" /> </a></div>
+                    <div class="featured-image"> <a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="thumbnail-medium img-responsive"  /> </a></div>
                     <div class="overlay">
                       <div class="overlay-content">
                         <a href="<?php echo $product['href']; ?>"><h2><?php echo $product['name']; ?></h2></a>

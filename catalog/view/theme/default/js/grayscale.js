@@ -19,6 +19,7 @@ $(function() {
 });
 
 //Google Map Skin - Get more at http://snazzymaps.com/
+/*
 var myOptions = {
     zoom: 15,
     center: new google.maps.LatLng(53.385873, -1.471471),
@@ -134,4 +135,25 @@ var myOptions = {
     }]
 };
 
-var map = new google.maps.Map(document.getElementById('map'), myOptions);
+*/
+//var map = new google.maps.Map(document.getElementById('map'), myOptions);
+
+/*
+Zeeshan Custom functions start from here
+
+*/
+
+//alert('This is something which w');
+$('#aboutvideo').mouseover(function(){
+        //alert('This');
+		var player = $("#nofocusvideo");
+        froogaloop = $f(player[0].id);
+        froogaloop.api('play');
+        $('#aboutvideo').mouseout(function(){
+            froogaloop.api('pause');
+        });
+		
+    });
+$('.dropdown').on('mouseenter mouseleave click tap', function() {
+  $(this).toggleClass("open");
+});	

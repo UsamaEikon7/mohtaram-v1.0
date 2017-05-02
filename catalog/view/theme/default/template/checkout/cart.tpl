@@ -1,5 +1,5 @@
 <?php echo $header; ?>
-    <section>
+    <section class="main_top">
     	
         <ol class="breadcrumb">
             <?php foreach ($breadcrumbs as $breadcrumb) { ?>
@@ -38,7 +38,7 @@
                         <?php //} ?>
                     </h2>
                     
-                </div><!--col md sm 12-->
+                <!--col md sm 12-->
                 <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
                 <div class="col-md-8 col-sm-8">
                 	
@@ -103,7 +103,48 @@
                       	</div>
                     
                     </div><!-- order box style-->
+                	</div>
+					<div class="col-md-4 col-sm-4">
+                	
+                    <div class="order-boxstyle">
                     
+                    	<h4>Order Total</h4>
+                        
+                        <div class="total-box" style="border-bottom:0px;">
+				<?php foreach ($totals as $total) {
+                        if(strtolower($total['title']) == 'total'){
+                         }else{ ?>
+                            	<p><?php echo $total['title']; ?>:  <span><?php echo $total['text']; ?></span></p>
+						 <?php }
+                        }
+                        ?>
+                        <div class="clear"></div>
+                      </div><!--order-detail-->
+                      
+                      	<div class="order-detail padding0" style="border-bottom:0px;">
+                        
+						<div class="story-content padding0">
+                            <?php foreach ($totals as $total) {
+									if(strtolower($total['title']) == 'total'){ ?>
+                            	<p><span class="price"><?php echo $total['title']; ?>:  <?php echo $total['text']; ?></span></p>
+                                <?php }
+							}?>
+                                <div class="clear"></div>
+                                
+                                <a href="<?php echo $checkout; ?>" class="chekout-btn hvr-bounce-to-left"><?php echo $button_checkout; ?></a>
+                            
+                        </div><!--story content-->
+                            
+                            <div class="clear"></div>
+                      </div><!--order-detail-->
+                      	
+                    
+                    </div><!-- order box style-->
+                    
+                </div><!--col md sm 4-->
+				
+				<div class="col-md-8 col-sm-8">
+                
 					  <?php if ($modules) { ?>
                           <h2><?php echo $text_next; ?></h2>
                           <p><?php echo $text_next_choice; ?></p>
@@ -162,44 +203,7 @@
                     
                 </div><!--col md sm 8-->
                 
-                <div class="col-md-4 col-sm-4">
-                	
-                    <div class="order-boxstyle">
-                    
-                    	<h4>Order Total</h4>
-                        
-                        <div class="total-box" style="border-bottom:0px;">
-				<?php foreach ($totals as $total) {
-                        if(strtolower($total['title']) == 'total'){
-                         }else{ ?>
-                            	<p><?php echo $total['title']; ?>:  <span><?php echo $total['text']; ?></span></p>
-						 <?php }
-                        }
-                        ?>
-                        <div class="clear"></div>
-                      </div><!--order-detail-->
-                      
-                      	<div class="order-detail padding0" style="border-bottom:0px;">
-                        
-						<div class="story-content padding0">
-                            <?php foreach ($totals as $total) {
-									if(strtolower($total['title']) == 'total'){ ?>
-                            	<p><span class="price"><?php echo $total['title']; ?>:  <?php echo $total['text']; ?></span></p>
-                                <?php }
-							}?>
-                                <div class="clear"></div>
-                                
-                                <a href="<?php echo $checkout; ?>" class="chekout-btn hvr-bounce-to-left"><?php echo $button_checkout; ?></a>
-                            
-                        </div><!--story content-->
-                            
-                            <div class="clear"></div>
-                      </div><!--order-detail-->
-                      	
-                    
-                    </div><!-- order box style-->
-                    
-                </div><!--col md sm 4-->
+                </div>
                 
                 <div class="clear"></div>
                 

@@ -7,7 +7,7 @@ $current_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
 <?php
  echo $header; ?>
-    <section class="archive product_detail_p" >
+    <section class="archive product_detail_p " >
     
         <div class="col-md-8 col-sm-8 padding0">
                 	
@@ -32,19 +32,28 @@ $current_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
                     <a href="<?php echo $item['href']; ?>" class="back-link pull-left"> &lt; Back to <?php echo $item['text']; ?> </a>
                     <?php } 
 					}?>
-                    <div class="social pull-right addthis_toolbox addthis_default_style addthis_32x32_style" data-url="<?php echo $share; ?>">
+					
+						<div class="col-md-4 a2a_kit a2a_kit_size_32 a2a_default_style">
+							<a class="a2a_button_facebook"></a>
+							<a class="a2a_button_twitter"></a>
+							<a class="a2a_button_google_plus"></a>
+						</div>
+					<script async src="https://static.addtoany.com/menu/page.js"></script>
+						
+						
+                    <!--<div class="social pull-right addthis_toolbox addthis_default_style addthis_32x32_style" data-url="<?php echo $share; ?>">
                     	
                         
                         <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $current_link; ?>"><i class="fa fa-facebook"></i></a>
                         <a href="https://twitter.com/home?status=<?php echo $current_link; ?>"><i class="fa fa-twitter"></i></a> 
                          <!--<a href=""><i class="fa fa-pinterest"></i></a>-->
-                         <a href="https://plus.google.com/share?url=<?php echo $current_link; ?>"><i class="fa fa-google-plus"></i></a>
+                        <!-- <a href="https://plus.google.com/share?url=<?php echo $current_link; ?>"><i class="fa fa-google-plus"></i></a>
                          <!--<a href=""><i class="fa fa-instagram"></i></a>
                          <a href=""><i class="fa fa-pinterest"></i></a>
                           -->
             			<!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>-->
                     
-                    </div><!--social-->
+                   <!--social-->
                     
                     <div class="clear"></div>
                 </div><!--social header-->
@@ -180,7 +189,7 @@ bumbac, vopsită pe articolul de îmbrăcăminte.</p> -->
           <div id="input-option<?php echo $option['product_option_id']; ?>" class="color-widget ">
           <?php foreach ($option['product_option_value'] as $option_value) { ?>
           <label class="checkbox-inline">
-                    <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option_value['product_option_value_id']; ?>" />
+                    <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option_value['product_option_value_id']; ?>" checked="checked" />
                     <?php if ($option_value['image']) { ?>
                     <img src="<?php echo $option_value['image']; ?>" alt="<?php echo $option_value['name'] . ($option_value['price'] ? ' ' . $option_value['price_prefix'] . $option_value['price'] : ''); ?>" class="img-thumbnail" /> 
                     <?php } ?>                    

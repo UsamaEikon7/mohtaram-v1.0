@@ -1,5 +1,5 @@
 <?php echo $header; ?>
-    <section class="archive">
+    <section class="archive main_top">
         <ul class="breadcrumb pull-left">
          <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     	<li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
@@ -10,7 +10,7 @@
          <div class="container">
          <div class="row ">
 			<?php echo $column_left; ?>
-      <div class="row" id="content">
+      <div class="row" id="content" style="padding:20px;">
         <div class="col-sm-3">
           <input type="text" name="search" value="<?php echo $search; ?>" placeholder="<?php echo $text_keyword; ?>" id="input-search" class="form-control check-field" />
         </div>
@@ -123,7 +123,7 @@
       
       
 <?php  }else { ?>
-      <p><?php echo $text_empty; ?></p>
+      <p style="padding:20px;"><?php echo $text_empty; ?></p>
       <?php } ?>
       <?php echo $content_bottom; ?></div>
       </div>

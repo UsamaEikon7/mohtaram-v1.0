@@ -4,6 +4,7 @@
 <?php echo $section2; ?>
 <?php echo $blog; ?>
 <?php echo $campaign; ?>
+<?php echo $popup; ?>
 
 <?php echo $gallery; ?>
 

@@ -1,5 +1,5 @@
 <?php echo $header; ?>
- <section class="archive">
+ <section class="archive main_top">
     	
        <ol class="breadcrumb">
          <?php foreach ($breadcrumbs as $breadcrumb) { ?>

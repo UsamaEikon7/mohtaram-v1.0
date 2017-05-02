@@ -12,12 +12,12 @@
       <div align="center">
         <div class="container padding-all">
           <div class="row">
-            <div class="col-md-6 col-sm-6">
+            <div class="col-md-8 col-sm-8">
               <?php if ($localenable==1) { ?>
               <!--<p ALIGN="CENTER"><?php echo $logmessgetop; ?></p>
               <p ALIGN="CENTER"><?php echo $logheading; ?></p>-->
               <!--<br />-->
-              <form id="module_logintk">
+              <form id="module_logintk" class="col-md-8 col-sm-8">
                 <input type="text" id="email" name="email" placeholder="<?php echo $entry_email_address; ?>"/>
                 <br />
                 <input type="password" id="password" name="password" placeholder="<?php echo $entry_password; ?>"/>
@@ -26,13 +26,12 @@
                 <div class="register-buttons">
                   <input type="button"  value="REGISTER" name="register-btn" class="btn btn-white register-btn-left" onclick="register()"/>
                   <input type="button" value="SIGN IN" name="signin-btn" class="btn send-btn register-btn-right" onclick="login()" />
-                </div>
+                
                 <a href="<?php echo $forgotten; ?>" class="button"><?php echo $button_forgotten; ?></a>
               </form>
               <?php } ?>
-            </div>
+
             <?php if ($fbenable==1 || $genable==1) { ?>
-            <div class="col-md-6 col-sm-6">
               <?php if ($fbenable==1) { ?>
               <a class="btn btn-block btn-social btn-facebook" href="<?php echo $advancedlogin_url; ?>"> <span class="fa fa-facebook"></span> CONTINUE WITH FACEBOOK </a>
               <?php } ?>
@@ -41,7 +40,7 @@
               <?php } ?>
               <!--<a class="btn btn-block btn-social btn-envelope">
     <span class="fa fa-envelope"></span> CONTINUE WITH MAIL
-  </a>--> 
+  </a>--> </div>
             </div>
             <?php } ?>
           </div>

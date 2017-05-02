@@ -114,7 +114,7 @@
                 
                 	<h2>THE GENTLEMEN’S CLUB</h2>
                     <div class="spece"></div>
-                    <p class="text-justify">Our clients aren’t just customers: they form part of a community of the finest gentlemen, a society that is spread far and wide yet is always connected, and functions as a coherent unit, bigger and greater than the sum of its individual units. It’s a society whose members live by the Pakistani Dream and take pride in following the Mohtaram way. Each of our valued clients thus gets entitled to the worthy title of “Mohtaram”.</p>
+                    <p class="testimonials_p">Our clients aren’t just customers: they form part of a community of the finest gentlemen, a society that is spread far and wide yet is always connected, and functions as a coherent unit, bigger and greater than the sum of its individual units. It’s a society whose members live by the Pakistani Dream and take pride in following the Mohtaram way. Each of our valued clients thus gets entitled to the worthy title of “Mohtaram”.</p>
 
 <!-- <a href="#" class="readmore-btn hvr-bounce-to-left">VIEW HER STORY</a> -->
 <!-- <div class="text-center">

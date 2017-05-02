@@ -1,0 +1,894 @@
+2016-10-20 10:25:32 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: HTML Product Attribute
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: var attribute_row = <?php echo $attribute_row; ?>;
+LINE: 1081
+CODE: $('#attribute tbody').append(html);
+LINE: 1101
+
+FILE: catalog/model/catalog/product.php
+CODE: $product_attribute_data[] = array(
+LINE: 322
+----------------------------------------------------------------
+2016-10-20 10:25:46 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: HTML Product Attribute
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: var attribute_row = <?php echo $attribute_row; ?>;
+LINE: 1081
+CODE: $('#attribute tbody').append(html);
+LINE: 1101
+
+FILE: catalog/model/catalog/product.php
+CODE: $product_attribute_data[] = array(
+LINE: 322
+----------------------------------------------------------------
+2016-10-20 15:50:53 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: HTML Product Attribute
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: var attribute_row = <?php echo $attribute_row; ?>;
+LINE: 1081
+CODE: $('#attribute tbody').append(html);
+LINE: 1101
+
+FILE: catalog/model/catalog/product.php
+CODE: $product_attribute_data[] = array(
+LINE: 322
+----------------------------------------------------------------
+MOD: Local copy OCMOD by iSenseLabs
+
+FILE: admin/controller/extension/installer.php
+CODE: 'url'  => str_replace('&amp;', '&', $this->url->link('extension/installer/ftp', 'token=' . $this->session->data['token'],
+LINE: 131
+CODE: public function unzip() {
+LINE: 292
+----------------------------------------------------------------
+2016-10-20 15:55:16 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Attributes Filters 1.1.2
+
+FILE: catalog/controller/product/product.php
+CODE: if (isset($this->request->get['filter'])) {
+LINE: 178
+LINE: 507
+
+FILE: catalog/controller/product/category.php
+CODE: if (isset($this->request->get['sort'])) {
+LINE: 72
+LINE: 332
+CODE: 'filter_category_id' => $category_id,
+LINE: 191
+CODE: if (isset($this->request->get['sort'])) {
+LINE: 168
+LINE: 385
+LINE: 458
+CODE: if (isset($this->request->get['limit'])) {
+LINE: 276
+
+FILE: catalog/model/catalog/product.php
+CODE: $sql .= " LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id) LEFT JOIN " . DB_PREFIX . "product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '" . (int)$this->config->get('config_store_id') . "'";
+LINE: 84
+LINE: 448
+CODE: $sql .= " LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id) LEFT JOIN " . DB_PREFIX . "product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '" . (int)$this->config->get('config_store_id') . "'";
+LINE: 134
+LINE: 548
+----------------------------------------------------------------
+MOD: HTML Product Attribute
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: var attribute_row = <?php echo $attribute_row; ?>;
+LINE: 1081
+CODE: $('#attribute tbody').append(html);
+LINE: 1101
+CODE: $product_attribute_data[] = array(
+LINE: 379
+----------------------------------------------------------------
+MOD: Local copy OCMOD by iSenseLabs
+
+FILE: admin/controller/extension/installer.php
+CODE: 'url'  => str_replace('&amp;', '&', $this->url->link('extension/installer/ftp', 'token=' . $this->session->data['token'],
+LINE: 131
+CODE: public function unzip() {
+LINE: 292
+----------------------------------------------------------------
+2016-10-21 12:39:05 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Attributes Filters 1.1.2
+
+FILE: catalog/controller/product/product.php
+CODE: if (isset($this->request->get['filter'])) {
+LINE: 178
+LINE: 507
+
+FILE: catalog/controller/product/category.php
+CODE: if (isset($this->request->get['sort'])) {
+LINE: 73
+LINE: 333
+CODE: 'filter_category_id' => $category_id,
+LINE: 192
+CODE: if (isset($this->request->get['sort'])) {
+LINE: 169
+LINE: 386
+LINE: 459
+CODE: if (isset($this->request->get['limit'])) {
+LINE: 277
+
+FILE: catalog/model/catalog/product.php
+CODE: $sql .= " LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id) LEFT JOIN " . DB_PREFIX . "product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '" . (int)$this->config->get('config_store_id') . "'";
+LINE: 84
+LINE: 448
+CODE: $sql .= " LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id) LEFT JOIN " . DB_PREFIX . "product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '" . (int)$this->config->get('config_store_id') . "'";
+LINE: 134
+LINE: 548
+----------------------------------------------------------------
+MOD: HTML Product Attribute
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: var attribute_row = <?php echo $attribute_row; ?>;
+LINE: 1081
+CODE: $('#attribute tbody').append(html);
+LINE: 1101
+CODE: $product_attribute_data[] = array(
+LINE: 379
+----------------------------------------------------------------
+MOD: Local copy OCMOD by iSenseLabs
+
+FILE: admin/controller/extension/installer.php
+CODE: 'url'  => str_replace('&amp;', '&', $this->url->link('extension/installer/ftp', 'token=' . $this->session->data['token'],
+LINE: 131
+CODE: public function unzip() {
+LINE: 292
+----------------------------------------------------------------
+2016-11-02 12:00:48 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Attributes Filters 1.1.2
+
+FILE: catalog/controller/product/product.php
+CODE: if (isset($this->request->get['filter'])) {
+LINE: 192
+LINE: 532
+
+FILE: catalog/controller/product/category.php
+CODE: if (isset($this->request->get['sort'])) {
+LINE: 73
+LINE: 333
+CODE: 'filter_category_id' => $category_id,
+LINE: 192
+CODE: if (isset($this->request->get['sort'])) {
+LINE: 169
+LINE: 386
+LINE: 459
+CODE: if (isset($this->request->get['limit'])) {
+LINE: 277
+
+FILE: catalog/model/catalog/product.php
+CODE: $sql .= " LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id) LEFT JOIN " . DB_PREFIX . "product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '" . (int)$this->config->get('config_store_id') . "'";
+LINE: 84
+LINE: 448
+CODE: $sql .= " LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id) LEFT JOIN " . DB_PREFIX . "product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '" . (int)$this->config->get('config_store_id') . "'";
+LINE: 134
+LINE: 548
+----------------------------------------------------------------
+MOD: Blog EXTENSION
+
+FILE: catalog/controller/common/footer.php
+CODE: $data['text_newsletter'] = $this->language->get('text_newsletter');
+LINE: 24
+
+FILE: catalog/language/en-gb/common/footer.php
+CODE: $_['text_newsletter']   = 'Newsletter';
+LINE: 18
+
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default12345/template/common/footer.tpl
+CODE: <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
+LINE: 21
+----------------------------------------------------------------
+MOD: HTML Product Attribute
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: var attribute_row = <?php echo $attribute_row; ?>;
+LINE: 1081
+CODE: $('#attribute tbody').append(html);
+LINE: 1101
+CODE: $product_attribute_data[] = array(
+LINE: 379
+----------------------------------------------------------------
+MOD: Local copy OCMOD by iSenseLabs
+
+FILE: admin/controller/extension/installer.php
+CODE: 'url'  => str_replace('&amp;', '&', $this->url->link('extension/installer/ftp', 'token=' . $this->session->data['token'],
+LINE: 131
+CODE: public function unzip() {
+LINE: 292
+----------------------------------------------------------------
+2016-11-02 12:38:55 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Attributes Filters 1.1.2
+
+FILE: catalog/controller/product/product.php
+CODE: if (isset($this->request->get['filter'])) {
+LINE: 192
+LINE: 532
+
+FILE: catalog/controller/product/category.php
+CODE: if (isset($this->request->get['sort'])) {
+LINE: 73
+LINE: 333
+CODE: 'filter_category_id' => $category_id,
+LINE: 192
+CODE: if (isset($this->request->get['sort'])) {
+LINE: 169
+LINE: 386
+LINE: 459
+CODE: if (isset($this->request->get['limit'])) {
+LINE: 277
+
+FILE: catalog/model/catalog/product.php
+CODE: $sql .= " LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id) LEFT JOIN " . DB_PREFIX . "product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '" . (int)$this->config->get('config_store_id') . "'";
+LINE: 84
+LINE: 448
+CODE: $sql .= " LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id) LEFT JOIN " . DB_PREFIX . "product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '" . (int)$this->config->get('config_store_id') . "'";
+LINE: 134
+LINE: 548
+----------------------------------------------------------------
+MOD: Blog EXTENSION
+
+FILE: catalog/controller/common/footer.php
+CODE: $data['text_newsletter'] = $this->language->get('text_newsletter');
+LINE: 24
+
+FILE: catalog/language/en-gb/common/footer.php
+CODE: $_['text_newsletter']   = 'Newsletter';
+LINE: 18
+
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default12345/template/common/footer.tpl
+CODE: <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
+LINE: 21
+----------------------------------------------------------------
+MOD: HTML Product Attribute
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: var attribute_row = <?php echo $attribute_row; ?>;
+LINE: 1081
+CODE: $('#attribute tbody').append(html);
+LINE: 1101
+CODE: $product_attribute_data[] = array(
+LINE: 379
+----------------------------------------------------------------
+MOD: Local copy OCMOD by iSenseLabs
+
+FILE: admin/controller/extension/installer.php
+CODE: 'url'  => str_replace('&amp;', '&', $this->url->link('extension/installer/ftp', 'token=' . $this->session->data['token'],
+LINE: 131
+CODE: public function unzip() {
+LINE: 292
+----------------------------------------------------------------
+2016-11-02 16:25:29 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Attributes Filters 1.1.2
+
+FILE: catalog/controller/product/product.php
+CODE: if (isset($this->request->get['filter'])) {
+LINE: 192
+LINE: 532
+
+FILE: catalog/controller/product/category.php
+CODE: if (isset($this->request->get['sort'])) {
+LINE: 73
+LINE: 333
+CODE: 'filter_category_id' => $category_id,
+LINE: 192
+CODE: if (isset($this->request->get['sort'])) {
+LINE: 169
+LINE: 386
+LINE: 459
+CODE: if (isset($this->request->get['limit'])) {
+LINE: 277
+
+FILE: catalog/model/catalog/product.php
+CODE: $sql .= " LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id) LEFT JOIN " . DB_PREFIX . "product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '" . (int)$this->config->get('config_store_id') . "'";
+LINE: 84
+LINE: 448
+CODE: $sql .= " LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id) LEFT JOIN " . DB_PREFIX . "product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '" . (int)$this->config->get('config_store_id') . "'";
+LINE: 134
+LINE: 548
+----------------------------------------------------------------
+MOD: Blog EXTENSION
+
+FILE: catalog/controller/common/footer.php
+CODE: $data['text_newsletter'] = $this->language->get('text_newsletter');
+LINE: 24
+
+FILE: catalog/language/en-gb/common/footer.php
+CODE: $_['text_newsletter']   = 'Newsletter';
+LINE: 18
+
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default12345/template/common/footer.tpl
+CODE: <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
+LINE: 21
+----------------------------------------------------------------
+MOD: HTML Product Attribute
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: var attribute_row = <?php echo $attribute_row; ?>;
+LINE: 1081
+CODE: $('#attribute tbody').append(html);
+LINE: 1101
+CODE: $product_attribute_data[] = array(
+LINE: 379
+----------------------------------------------------------------
+MOD: Local copy OCMOD by iSenseLabs
+
+FILE: admin/controller/extension/installer.php
+CODE: 'url'  => str_replace('&amp;', '&', $this->url->link('extension/installer/ftp', 'token=' . $this->session->data['token'],
+LINE: 131
+CODE: public function unzip() {
+LINE: 292
+----------------------------------------------------------------
+2016-11-02 16:40:17 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Attributes Filters 1.1.2
+
+FILE: catalog/controller/product/product.php
+CODE: if (isset($this->request->get['filter'])) {
+LINE: 192
+LINE: 532
+
+FILE: catalog/controller/product/category.php
+CODE: if (isset($this->request->get['sort'])) {
+LINE: 73
+LINE: 333
+CODE: 'filter_category_id' => $category_id,
+LINE: 192
+CODE: if (isset($this->request->get['sort'])) {
+LINE: 169
+LINE: 386
+LINE: 459
+CODE: if (isset($this->request->get['limit'])) {
+LINE: 277
+
+FILE: catalog/model/catalog/product.php
+CODE: $sql .= " LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id) LEFT JOIN " . DB_PREFIX . "product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '" . (int)$this->config->get('config_store_id') . "'";
+LINE: 84
+LINE: 448
+CODE: $sql .= " LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id) LEFT JOIN " . DB_PREFIX . "product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '" . (int)$this->config->get('config_store_id') . "'";
+LINE: 134
+LINE: 548
+----------------------------------------------------------------
+MOD: Blog EXTENSION
+
+FILE: catalog/controller/common/footer.php
+CODE: $data['text_newsletter'] = $this->language->get('text_newsletter');
+LINE: 24
+
+FILE: catalog/language/en-gb/common/footer.php
+CODE: $_['text_newsletter']   = 'Newsletter';
+LINE: 18
+
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default12345/template/common/footer.tpl
+CODE: <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
+LINE: 21
+----------------------------------------------------------------
+MOD: HTML Product Attribute
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: var attribute_row = <?php echo $attribute_row; ?>;
+LINE: 1081
+CODE: $('#attribute tbody').append(html);
+LINE: 1101
+CODE: $product_attribute_data[] = array(
+LINE: 379
+----------------------------------------------------------------
+MOD: Local copy OCMOD by iSenseLabs
+
+FILE: admin/controller/extension/installer.php
+CODE: 'url'  => str_replace('&amp;', '&', $this->url->link('extension/installer/ftp', 'token=' . $this->session->data['token'],
+LINE: 131
+CODE: public function unzip() {
+LINE: 292
+----------------------------------------------------------------
+2016-11-02 16:41:52 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Attributes Filters 1.1.2
+
+FILE: catalog/controller/product/product.php
+CODE: if (isset($this->request->get['filter'])) {
+LINE: 192
+LINE: 532
+
+FILE: catalog/controller/product/category.php
+CODE: if (isset($this->request->get['sort'])) {
+LINE: 73
+LINE: 333
+CODE: 'filter_category_id' => $category_id,
+LINE: 192
+CODE: if (isset($this->request->get['sort'])) {
+LINE: 169
+LINE: 386
+LINE: 459
+CODE: if (isset($this->request->get['limit'])) {
+LINE: 277
+
+FILE: catalog/model/catalog/product.php
+CODE: $sql .= " LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id) LEFT JOIN " . DB_PREFIX . "product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '" . (int)$this->config->get('config_store_id') . "'";
+LINE: 84
+LINE: 448
+CODE: $sql .= " LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id) LEFT JOIN " . DB_PREFIX . "product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '" . (int)$this->config->get('config_store_id') . "'";
+LINE: 134
+LINE: 548
+----------------------------------------------------------------
+MOD: Blog EXTENSION
+
+FILE: catalog/controller/common/footer.php
+CODE: $data['text_newsletter'] = $this->language->get('text_newsletter');
+LINE: 24
+
+FILE: catalog/language/en-gb/common/footer.php
+CODE: $_['text_newsletter']   = 'Newsletter';
+LINE: 18
+
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default12345/template/common/footer.tpl
+CODE: <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
+LINE: 21
+----------------------------------------------------------------
+MOD: HTML Product Attribute
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: var attribute_row = <?php echo $attribute_row; ?>;
+LINE: 1081
+CODE: $('#attribute tbody').append(html);
+LINE: 1101
+CODE: $product_attribute_data[] = array(
+LINE: 379
+----------------------------------------------------------------
+MOD: Local copy OCMOD by iSenseLabs
+
+FILE: admin/controller/extension/installer.php
+CODE: 'url'  => str_replace('&amp;', '&', $this->url->link('extension/installer/ftp', 'token=' . $this->session->data['token'],
+LINE: 131
+CODE: public function unzip() {
+LINE: 292
+----------------------------------------------------------------
+2017-03-02 11:18:57 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: Attributes Filters 1.1.2
+
+FILE: catalog/controller/product/product.php
+CODE: if (isset($this->request->get['filter'])) {
+LINE: 192
+LINE: 532
+
+FILE: catalog/controller/product/category.php
+CODE: if (isset($this->request->get['sort'])) {
+LINE: 73
+LINE: 332
+CODE: 'filter_category_id' => $category_id,
+LINE: 192
+CODE: if (isset($this->request->get['sort'])) {
+LINE: 169
+LINE: 385
+LINE: 458
+CODE: if (isset($this->request->get['limit'])) {
+LINE: 276
+
+FILE: catalog/model/catalog/product.php
+CODE: $sql .= " LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id) LEFT JOIN " . DB_PREFIX . "product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '" . (int)$this->config->get('config_store_id') . "'";
+LINE: 84
+LINE: 448
+CODE: $sql .= " LEFT JOIN " . DB_PREFIX . "product_description pd ON (p.product_id = pd.product_id) LEFT JOIN " . DB_PREFIX . "product_to_store p2s ON (p.product_id = p2s.product_id) WHERE pd.language_id = '" . (int)$this->config->get('config_language_id') . "' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '" . (int)$this->config->get('config_store_id') . "'";
+LINE: 134
+LINE: 548
+----------------------------------------------------------------
+MOD: Blog EXTENSION
+
+FILE: catalog/controller/common/footer.php
+CODE: $data['text_newsletter'] = $this->language->get('text_newsletter');
+LINE: 24
+
+FILE: catalog/language/en-gb/common/footer.php
+CODE: $_['text_newsletter']   = 'Newsletter';
+LINE: 18
+
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default12345/template/common/footer.tpl
+CODE: <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
+LINE: 21
+----------------------------------------------------------------
+MOD: HTML Product Attribute
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: var attribute_row = <?php echo $attribute_row; ?>;
+LINE: 1081
+CODE: $('#attribute tbody').append(html);
+LINE: 1101
+CODE: $product_attribute_data[] = array(
+LINE: 379
+----------------------------------------------------------------
+MOD: Local copy OCMOD by iSenseLabs
+
+FILE: admin/controller/extension/installer.php
+CODE: 'url'  => str_replace('&amp;', '&', $this->url->link('extension/installer/ftp', 'token=' . $this->session->data['token'],
+LINE: 131
+CODE: public function unzip() {
+LINE: 292
+----------------------------------------------------------------

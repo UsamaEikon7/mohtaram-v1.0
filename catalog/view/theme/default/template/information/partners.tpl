@@ -17,26 +17,30 @@
 
 	<!--	</section>
         -->
-<section class="moh-branding partnerscustom about-section">
+<section class="moh-branding partnerscustom">
             <div class="row" id="Guabello">
-    <div class="col-md-6 col-xs-12 no-pad">
-      <div class="bg-image-brand" style="background:url(image/partners/guabello.jpg) center center no-repeat ; background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"></div>
-    </div>
-    <div class="col-md-6 col-sm-12 col-xs-12 white-col">
-      <div class="row">
-        <div class="wrap-about">
-          <div class="w-content">
-            <div class="fusion-column-tablecell"><h2 style="text-align: center;" data-fontsize="26" data-lineheight="44">Guabello</h2>
-<div class="fusion-sep-clear"></div><div class="fusion-separator sep-single" ></div><p class="text-justify">Guabello was established in 1815 and truly prides itself on its profound relationship with its surroundings, its exquisite history of craftsmanship and its superior expertise. These excellent qualities continue to be handed down, generation after generation like a boon to produce the best product every single time. 
-Guabello fabrics are designed and manufactured at the state-of-the-art Mongrando factory, where tailoring expertise, creativity, quality, innovation, and respect for the environment meet to form a magnificent creation that will deliver both quality and style. Its collections make use of high quality raw materials and fibers, including the highly sought-after Merino Wool.
-</p>
-<div class="fusion-clearfix"></div></div>
-          </div>
-        </div>
-      </div>
-      <!--/.OWL CAROUSEL2 END--> 
-    </div>
-  </div>
+				<div class="col-md-6 col-xs-12 no-pad">
+					<div class="bg-image-brand" style="background:url(image/partners/guabello.jpg) center center no-repeat ; background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"></div>
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12 white-col">
+					<div class="row">
+						<div class="wrap-about">
+							<div class="w-content">
+								<div class="fusion-column-tablecell">
+									<h2 style="text-align: center;" data-fontsize="26" data-lineheight="44">Guabello</h2>
+									<div class="fusion-sep-clear"></div>
+									<div class="fusion-separator sep-single" ></div>
+									<p class="text-justify">Guabello was established in 1815 and truly prides itself on its profound relationship with its surroundings, its exquisite history of craftsmanship and its superior expertise. These excellent qualities continue to be handed down, generation after generation like a boon to produce the best product every single time. 
+										Guabello fabrics are designed and manufactured at the state-of-the-art Mongrando factory, where tailoring expertise, creativity, quality, innovation, and respect for the environment meet to form a magnificent creation that will deliver both quality and style. Its collections make use of high quality raw materials and fibers, including the highly sought-after Merino Wool.
+									</p>
+									<div class="fusion-clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/.OWL CAROUSEL2 END--> 
+				</div>
+			</div>
   <div class="row" id="Angelico">
     <div class="col-md-6 col-sm-12 col-xs-12 white-col">
       <div class="row">

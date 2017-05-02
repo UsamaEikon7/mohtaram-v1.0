@@ -14,8 +14,8 @@ class ControllerInformationbrands extends Controller {
 
 
 
-		$this->document->setTitle("Brand Elements");
-		$this->document->setDescription("Our Brand Elements");
+		$this->document->setTitle("Elements of Mohtaram");
+		$this->document->setDescription("Elements of Mohtaram");
 		$this->document->setKeywords("Mohtaram, Brand Elements");
 
 		$data['breadcrumbs'][] = array(
@@ -23,7 +23,7 @@ class ControllerInformationbrands extends Controller {
 			'href' => $this->url->link('information/brands')
 		);
 
-		$data['heading_title'] = "Brand Elements";
+		$data['heading_title'] = "Elements of Mohtaram";
 
 		$data['button_continue'] = $this->language->get('button_continue');
 

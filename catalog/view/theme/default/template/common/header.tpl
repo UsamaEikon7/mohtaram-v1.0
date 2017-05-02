@@ -74,7 +74,7 @@ if(isset($in_specimen)){
 		stickyNav();  
 		  
 		$(window).scroll(function() {  
-			//stickyNav();
+			stickyNav();
 		});  
 		});  
 
@@ -147,8 +147,8 @@ if(isset($in_specimen)){
                 <ul class="dropdown-menu list-unstyled">
                         <li ><a href="<?php echo $base; ?>index.php?route=information/information&information_id=4" >About Us</a> </li>
                         <li ><a href="<?php echo $base; ?>index.php?route=information/team" >Our Team</a> </li>
-                        <li ><a href="<?php echo $base; ?>index.php?route=information/brands" >Our Brand Elements</a> </li>
-                        <li ><a href="<?php echo $base; ?>index.php?route=information/workshop" >Our Workshop</a> </li>
+                        <li ><a href="<?php echo $base; ?>index.php?route=information/brands" >Elements of Mohtaram</a> </li>
+                        <li ><a href="<?php echo $base; ?>index.php?route=information/workshop" >The Mohtaram Atelier</a> </li>
                       </ul>
                  
                 </li>
